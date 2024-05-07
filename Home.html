@@ -14,19 +14,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
     <!-- End of Google Fonts -->
+    <!-- Ajax -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- End of Ajax -->
     <!-- LOcal CSS -->
     <link rel="stylesheet" href="style/Home.css">
+    <link rel="stylesheet" href="style/style.css">
     <!-- End of Local CSS -->
     <title>KRYJ</title>
     <style>
       html {
-        font-family: 'EB Garamond', sans-serif;
+        font-family: 'EB Garamond', sans-serif !important;
       }
     </style>
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">KRYJ</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +53,7 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> -->
     <!-- End of Navigation Bar -->
 
     <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -85,7 +89,45 @@
           </div>
         </div>
       </nav> -->
-    
+
+    <!-- Navigation Bar -->
+    <header>
+      <div class="navbar">
+          <div class="logo">
+              <a href="#">
+                  Logo
+              </a>
+          </div>
+
+          <ul class="links">
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="socials">
+              <a href="" target="_blank"><i class="fa-brands fa-facebook" id="facebook"></i></a>
+              <a href="" target="_blank"><i class="fa-brands fa-github" id="github"></i></a>
+              <a href="" target="_blank"><i class="fa-brands fa-linkedin" id="linkedin"></i></a>
+              <a href="" target="_blank"><i class="fa-brands fa-twitter" id="twitter"></i></a>
+          </div>
+          <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
+      </div>
+
+      <div class="dropdown_menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+          <div class="socials">
+              <a href="" target="_blank"><i class="fa-brands fa-facebook" id="facebook"></i></a>
+              <a href="" target="_blank"><i class="fa-brands fa-github" id="github"></i></a>
+              <a href="" target="_blank"><i class="fa-brands fa-linkedin" id="linkedin"></i></a>
+              <a href="" target="_blank"><i class="fa-brands fa-twitter" id="twitter"></i></a>
+          </div>
+      </div>
+    </header>
+    <!-- End of NavBar -->
 
     <!-- Bootsrap Carousel -->
     <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -113,6 +155,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-beta1/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0v8FqFjcJ6pajs/rfdfs3SO+kD4Ck5BdPtF+to8xM6B5z6W5" crossorigin="anonymous"></script>
+    <!-- Local Scripts -->
+    <script src="js/index.js"></script>
     <!-- End of Scripts -->
 </body>
 </html>
