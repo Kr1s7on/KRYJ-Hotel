@@ -10,7 +10,6 @@
 }
 
 * {
-    font-family: 'Urbanist', serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -35,14 +34,15 @@ a:hover {
 /********* NAVIGATION BAR *********/
 
 header {
-    position: relative;
-    padding: 0 2rem;
-    height: 100vh;
+    position: sticky;
+    top: 0;
+    /* padding: 0 2rem; */
     background-image: url(../images/background-1.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    
+    width: 100%;
+    z-index: 1000; 
 }
 
 .navbar {
@@ -52,6 +52,24 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 2em;
+    z-index: 1000;
+    background-color: white;
+    /* background-color: transparent; */
+    /* background: rgba(255, 255, 255, 0.493); */
+    backdrop-filter: blur(15px);
+}
+
+.navbar.transparent {
+    background-color: transparent;
+}
+
+.navbar.dropdown-active {
+    background-color: rgba(255, 255, 255, 0.493);
+}
+
+.logo {
+    font-family: "Liu Jian Mao Cao", cursive;
 }
 
 .navbar .logo a img {
@@ -63,10 +81,12 @@ header {
     display: flex;
     gap: 2rem;
     font-weight: 500;
+    margin-bottom: 0;
 }
 
 .navbar .toggle_btn {
     color: var(--color-black);
+    /* color: white; */
     font-size: 1.5rem;
     cursor: pointer;
     display: none;
@@ -78,7 +98,7 @@ header {
 
 .navbar .socials a #facebook {
     font-size: 1.5rem;
-    color: rgb(3, 182, 253);
+    color: rgb(0, 0, 0);
     margin-left: 0.5rem;
 }
 
@@ -90,13 +110,13 @@ header {
 
 .navbar .socials a #linkedin {
     font-size: 1.5rem;
-    color: rgb(43, 102, 190);
+    color: rgb(0, 0, 0);
     margin-left: 0.5rem;
 }
 
 .navbar .socials a #twitter {
     font-size: 1.5rem;
-    color: rgb(21, 139, 218);
+    color: rgb(0, 0, 0);
     margin-left: 0.5rem;
 }
 
@@ -105,13 +125,13 @@ header {
 .navbar .socials a:hover #github,
 .navbar .socials a:hover #twitter {
     color: var(--accent-color);
-    font-size: 2rem;
+    font-size: 1.5rem;
     transition: 0.4s;
 }
 
 .dropdown_menu .socials a #facebook {
     font-size: 1.5rem;
-    color: rgb(15, 64, 83);
+    color: rgb(0, 0, 0);
     margin-left: 0.5rem;
 }
 
@@ -123,13 +143,13 @@ header {
 
 .dropdown_menu .socials a #linkedin {
     font-size: 1.5rem;
-    color: rgb(38, 75, 131);
+    color: rgb(0, 0, 0);
     margin-left: 0.5rem;
 }
 
 .dropdown_menu .socials a #twitter {
     font-size: 1.5rem;
-    color: rgb(37, 131, 194);
+    color: rgb(0, 0, 0);
     margin-left: 0.5rem;
 }
 
@@ -138,7 +158,7 @@ header {
 .dropdown_menu .socials a:hover #github,
 .dropdown_menu .socials a:hover #twitter {
     color: var(--accent-color);
-    font-size: 2rem;
+    font-size: 1.5rem;
     transition: 0.4s;
 }
 
@@ -160,23 +180,28 @@ header {
 
 .dropdown_menu {
     position: absolute;
-    right: 2rem;
-    top: 100px;
-    width: 300px;
+    /* top: 90px; */
+    width: 100%;
     height: 0;
-    background: rgba(0,0,0,0.1);
-    backdrop-filter: blur(15px);
-    border-radius: 10px;
+    /* background: rgba(0,0,0,0.1); */
+    /* background: rgba(255, 255, 255, 0.493); */
+    /* backdrop-filter: blur(15px); */
+    background-color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     overflow: hidden;
-    transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: height 0.5s ease-in-out;
+    box-shadow: #000 0px 0px 20px;
 }
 
 .dropdown_menu.open {
-    height: 350px;
+    /* height: 350px; */
+    height: 100vh;
 }
 
 .dropdown_menu li {
-    padding: 0.7rem;
+    /* padding: 0.7rem; */
+    padding: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -185,8 +210,9 @@ header {
 .dropdown_menu .socials {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
-    margin-top: 1rem;
+    /* gap: 1.5rem; */
+    gap: 3rem;
+    margin-top: 1.7rem;
 }
 
 /********* RESPONSIVENESS DESIGN *********/
@@ -205,7 +231,7 @@ header {
 @media (max-width: 576px) { 
     /********* PHONE *********/
     .dropdown_menu {
-        left: 2rem;
-        width: unset;
+        /* left: 2rem;
+        width: unset; */
     }
 }
