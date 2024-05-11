@@ -1,13 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&family=Rock+Salt&display=swap');
-
-:root {
-    --color-white: #fff;
-    --primary-color: #14213D;
-    --accent-color: #92723e;
-    --color-black: #000;
-    --roboto-font: 'Roboto Slab', serif;
-    --rocksalt-font: 'Rock Salt', cursive;
-}
 
 * {
     margin: 0;
@@ -19,24 +9,39 @@ li {
     list-style: none;
 }
 
-a {
+header a {
     text-decoration: none;
-    color: var(--color-black);
+    color: black;
     font-size: 1rem;
+    position: relative;
 }
 
-a:hover {
-    color: var(--accent-color);
-    font-size: 1.3rem;
-    transition: 0.7s;
+header a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(134, 87, 0);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
 }
 
-/********* NAVIGATION BAR *********/
+header a:hover {
+    color: rgb(151, 98, 0);
+}
 
+header a:hover::before {
+    visibility: visible;
+    width: 100%;
+}
+
+
+/* Everythng Navbar */
 header {
     position: sticky;
     top: 0;
-    /* padding: 0 2rem; */
     background-image: url(../images/background-1.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -55,9 +60,8 @@ header {
     padding: 2em;
     z-index: 1000;
     background-color: white;
-    /* background-color: transparent; */
-    /* background: rgba(255, 255, 255, 0.493); */
     backdrop-filter: blur(15px);
+    box-shadow: #000 0px 0px 20px;
 }
 
 .navbar.transparent {
@@ -69,7 +73,11 @@ header {
 }
 
 .logo {
-    font-family: "Liu Jian Mao Cao", cursive;
+    font-family: 'Lexend Peta', cursive;
+}
+
+.navbar .logo a {
+    font-size: 1.5rem;
 }
 
 .navbar .logo a img {
@@ -85,15 +93,15 @@ header {
 }
 
 .navbar .toggle_btn {
-    color: var(--color-black);
-    /* color: white; */
+    color: black;
     font-size: 1.5rem;
     cursor: pointer;
     display: none;
 }
 
 .navbar .toggle_btn:hover {
-    color: var(--accent-color);
+    text-shadow: #d1d1d1 0px 0px 10px;
+    transition: 500ms;
 }
 
 .navbar .socials a #facebook {
@@ -102,28 +110,21 @@ header {
     margin-left: 0.5rem;
 }
 
-.navbar .socials a #github {
+.navbar .socials a #x {
     font-size: 1.5rem;
     color: rgb(0, 0, 0);
     margin-left: 0.5rem;
 }
 
-.navbar .socials a #linkedin {
-    font-size: 1.5rem;
-    color: rgb(0, 0, 0);
-    margin-left: 0.5rem;
-}
-
-.navbar .socials a #twitter {
+.navbar .socials a #instagram {
     font-size: 1.5rem;
     color: rgb(0, 0, 0);
     margin-left: 0.5rem;
 }
 
 .navbar .socials a:hover #facebook,
-.navbar .socials a:hover #linkedin,
-.navbar .socials a:hover #github,
-.navbar .socials a:hover #twitter {
+.navbar .socials a:hover #x,
+.navbar .socials a:hover #instagram {
     color: var(--accent-color);
     font-size: 1.5rem;
     transition: 0.4s;
@@ -135,30 +136,23 @@ header {
     margin-left: 0.5rem;
 }
 
-.dropdown_menu .socials a #github {
+.dropdown_menu .socials a #x {
     font-size: 1.5rem;
     color: rgb(0, 0, 0);
     margin-left: 0.5rem;
 }
 
-.dropdown_menu .socials a #linkedin {
-    font-size: 1.5rem;
-    color: rgb(0, 0, 0);
-    margin-left: 0.5rem;
-}
-
-.dropdown_menu .socials a #twitter {
+.dropdown_menu .socials a #instagram {
     font-size: 1.5rem;
     color: rgb(0, 0, 0);
     margin-left: 0.5rem;
 }
 
 .dropdown_menu .socials a:hover #facebook,
-.dropdown_menu .socials a:hover #linkedin,
-.dropdown_menu .socials a:hover #github,
-.dropdown_menu .socials a:hover #twitter {
+.dropdown_menu .socials a:hover #x,
+.dropdown_menu .socials a:hover #instagram {
     color: var(--accent-color);
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     transition: 0.4s;
 }
 
@@ -176,27 +170,39 @@ header {
     font-family: var(--roboto-font);
 }
 
-/********* DROPDOWN MENU *********/
-
+/* Dropdown Menu */
 .dropdown_menu {
-    position: absolute;
-    /* top: 90px; */
-    width: 100%;
+    position: fixed; /* Use fixed positioning */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for element's own dimensions */
+    width: 80%; /* Set to desired width */
+    max-width: 500px; /* Prevent the card from becoming too wide on large screens */
     height: 0;
-    /* background: rgba(0,0,0,0.1); */
-    /* background: rgba(255, 255, 255, 0.493); */
-    /* backdrop-filter: blur(15px); */
     background-color: white;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-radius: 15px; /* Add border radius */
     overflow: hidden;
-    transition: height 0.5s ease-in-out;
+    transition: height 0.8s linear;
     box-shadow: #000 0px 0px 20px;
+    opacity: 0; /* Start invisible */
+    visibility: hidden; /* Hide element */
 }
 
 .dropdown_menu.open {
-    /* height: 350px; */
-    height: 100vh;
+    height: 80%; /* Set to desired height */
+    max-height: 500px; /* Prevent the card from becoming too tall on large screens */
+    animation: fadeIn 1s;
+    opacity: 1; /* Make visible */
+    visibility: visible; /* Show element */
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 .dropdown_menu li {
@@ -214,11 +220,13 @@ header {
     gap: 3rem;
     margin-top: 1.7rem;
 }
+/* End of Dropdown Menu */
 
-/********* RESPONSIVENESS DESIGN *********/
+
+/* Media Queries for Responsive Design */
 
 @media (max-width: 992px) {
-    /********* TABLET *********/
+    /* Tablet */
     .navbar .links, .navbar .socials {
         display: none;
     }
@@ -229,9 +237,38 @@ header {
 }
 
 @media (max-width: 576px) { 
-    /********* PHONE *********/
+    /* Phone */
     .dropdown_menu {
         /* left: 2rem;
         width: unset; */
     }
+}
+
+@media (max-height: 685px) {
+    .dropdown_menu.open {
+        margin-top: 14%;
+    }
+}
+/* End of Media Queries */
+/* End of Navbar */
+
+/* Scrollbar Styling */
+/* Width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #ffffff; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #696f8b; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #444c6d;
 }

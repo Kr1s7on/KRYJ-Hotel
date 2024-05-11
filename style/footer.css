@@ -11,6 +11,21 @@ body{
 	max-width: 1170px;
 	margin:auto;
 }
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #1d1d1d;
+    color: white;
+    font-size: 12px;
+	font-family: 'Lexend Peta';
+}
+
+.copyright p {
+	margin: 0;
+}
+
 .row{
 	display: flex;
 	flex-wrap: wrap;
