@@ -244,6 +244,12 @@ body.no-scroll {
     }
 }
 
+@media (max-height: 760px) and (min-height: 690px) {
+    .dropdown_menu.open {
+        margin-top: 15.5%;
+    }
+}
+
 @media (max-height: 685px) {
     .dropdown_menu.open {
         margin-top: 14%;
