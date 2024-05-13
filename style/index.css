@@ -1,66 +1,7 @@
 /* font for the entire body */
-/* !important to override Bootstrap stylesheet */
 body {
     font-family: 'Urbanist', sans-serif;
 }
-
-/* Position the carousel at the top of the page and adjust the margin */
-/* -100px because the nav is exactly 100px */
-.carousel-bootstrap {
-    top: 0;
-    margin-top: -100px;
-}
-
-/* Set the width and height of the carousel container to fill the viewport */
-.carousel-inner {
-    width: 100%;
-    height: 100vh;
-}
-
-/* Set the width and height of each carousel item to fill the viewport */
-.carousel-item {
-    width: 100%;
-    height: 100vh;
-}
-
-/* Set the width and height of the images inside the carousel items to fill the viewport, while maintaining aspect ratio */
-.carousel-item img {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-}
-
-/* Set the width and height of the videos inside the carousel items to fill the viewport, while maintaining aspect ratio */
-.carousel-item video {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-}
-
-/* Captionsfor carousel */
-.carousel-caption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.carousel-caption h1 {
-    font-size: 2.5rem;
-    color: #fff;
-}
-
-.carousel-caption p {
-    font-size: 1.5rem;
-    color: #fff;
-}
-
-.carousel-caption a {
-    color: #fff;
-    font-size: 3rem;
-}
-/* End of captions */
 
 /* Home Video */
 .home-video video {
@@ -100,10 +41,31 @@ body {
 }
 
 .home-video-content span {
-    font-family: 'Lexend Peta';
+    font-family: 'Lexend Peta', cursive;
 }
 
-.whte-line {
-    text-align: center;
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
 }
-/* End of Home Vdeo */
+
+.down-btn {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    transition: 1s;
+    font-weight: 300;
+    font-family: 'Lexend Peta', cursive;
+    animation: bounce 1s infinite;
+}
+
+.down-btn:hover {
+    text-shadow: #000000 0px 0px 30px;
+    color: goldenrod;
+    transition: 1s;
+}
+/* End of home vdeo */

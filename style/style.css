@@ -9,42 +9,10 @@ li {
     list-style: none;
 }
 
-header a {
-    text-decoration: none;
-    color: black;
-    font-size: 1rem;
-    position: relative;
-}
-
-header a::before {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: rgb(134, 87, 0);
-    visibility: hidden;
-    transition: all 0.3s ease-in-out;
-}
-
-header a:hover {
-    color: rgb(151, 98, 0);
-}
-
-header a:hover::before {
-    visibility: visible;
-    width: 100%;
-}
-
-
 /* Everythng Navbar */
 header {
     position: sticky;
     top: 0;
-    background-image: url(../images/background-1.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
     width: 100%;
     z-index: 1000; 
@@ -72,8 +40,51 @@ header {
     background-color: rgba(255, 255, 255, 0.493);
 }
 
-.logo {
+.logo a {
     font-family: 'Lexend Peta', cursive;
+    text-decoration: none;
+    color: black;
+}
+
+.logo a:hover {
+    cursor: pointer;
+    text-shadow: #d1d1d1 0px 0px 20px;
+    transition: 700ms;
+}
+
+.navbar .links a,
+.dropdown_menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    position: relative;
+}
+
+.navbar .links a::before,
+.dropdown_menu li a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    background-color: rgb(134, 87, 0);
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.navbar .links a:hover,
+.dropdown_menu li a:hover {
+    color: rgb(151, 98, 0);
+}
+
+.navbar .links a:hover::before,
+.dropdown_menu li a:hover::before {
+    visibility: visible;
+    width: 100%;
+    left: 0;
+    transform: translateX(0%);
 }
 
 .navbar .logo a {
@@ -122,10 +133,10 @@ header {
     margin-left: 0.5rem;
 }
 
-.navbar .socials a:hover #facebook,
+.navbar .socials a #facebook:hover,
 .navbar .socials a:hover #x,
 .navbar .socials a:hover #instagram {
-    color: var(--accent-color);
+    color: rgb(151, 98, 0);
     font-size: 1.5rem;
     transition: 0.4s;
     text-decoration: none;
@@ -152,8 +163,7 @@ header {
 .dropdown_menu .socials a:hover #facebook,
 .dropdown_menu .socials a:hover #x,
 .dropdown_menu .socials a:hover #instagram {
-    color: var(--accent-color);
-    /* font-size: 1.5rem; */
+    color: rgb(151, 98, 0);
     transition: 0.4s;
 }
 
@@ -168,7 +178,6 @@ header {
     font-size: 14px;
     pointer-events: none;
     display: none;
-    font-family: var(--roboto-font);
 }
 
 /* Dropdown Menu */
@@ -181,9 +190,8 @@ header {
     max-width: 500px; /* Prevent the card from becoming too wide on large screens */
     height: 0;
     background-color: white;
-    border-radius: 15px; /* Add border radius */
+    border-radius: 15px; /* Add border radius for the round corner thing */
     overflow: hidden;
-    transition: height 1s;
     box-shadow: #000 0px 0px 20px;
     opacity: 0; /* Start invisible */
     visibility: hidden; /* Hide element */
@@ -237,13 +245,13 @@ body.no-scroll {
     }
 }
 
-@media (max-width: 576px) { 
-    /* Phone */
+/* @media (max-width: 576px) { 
+    Phone
     .dropdown_menu {
-        /* left: 2rem;
-        width: unset; */
+        left: 2rem;
+        width: unset;
     }
-}
+} */
 
 @media (max-height: 760px) and (min-height: 690px) {
     .dropdown_menu.open {

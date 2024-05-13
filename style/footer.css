@@ -38,14 +38,18 @@ body{
     position: absolute;
     width: 0;
     height: 1px;
-    bottom: 0;
-    left: 0;
+    bottom: -5px; /* Adjust this value to move the underline up or down */
+    left: 50%;
     background: #fff; /* Change to desired underline color */
-    transition: width .3s;
+    transition: all 1s ease-in-out;
+    transform: translateX(-50%);
 }
 
 .copyright p a:hover::after {
+    visibility: visible;
     width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .row{
