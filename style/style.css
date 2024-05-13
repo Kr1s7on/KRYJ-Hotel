@@ -183,7 +183,7 @@ header {
     background-color: white;
     border-radius: 15px; /* Add border radius */
     overflow: hidden;
-    transition: height 0.8s linear;
+    transition: height 1s;
     box-shadow: #000 0px 0px 20px;
     opacity: 0; /* Start invisible */
     visibility: hidden; /* Hide element */

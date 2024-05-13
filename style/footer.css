@@ -26,6 +26,28 @@ body{
 	margin: 0;
 }
 
+.copyright p a {
+    position: relative;
+    text-decoration: none;
+	color: white;
+	transition: color .3s;
+}
+
+.copyright p a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background: #fff; /* Change to desired underline color */
+    transition: width .3s;
+}
+
+.copyright p a:hover::after {
+    width: 100%;
+}
+
 .row{
 	display: flex;
 	flex-wrap: wrap;

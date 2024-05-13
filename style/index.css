@@ -71,4 +71,39 @@ body {
     top: 0;
     margin-top: -100px;
 }
+
+/* Captions */
+.home-video-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.home-video-content a {
+    color: white;
+    font-size: 3rem;
+    border: none;
+}
+
+.home-video-content h1 a {
+    color: white;
+    font-size: 3rem;
+    border: none;
+
+}
+
+.home-video-content a:hover {
+    cursor: pointer;
+}
+
+.home-video-content span {
+    font-family: 'Lexend Peta';
+}
+
+.whte-line {
+    text-align: center;
+}
 /* End of Home Vdeo */
