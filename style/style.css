@@ -87,6 +87,16 @@ header {
     transform: translateX(0%);
 }
 
+.dropdown_menu li:hover {
+    font-size: 1.5rem;
+    background-color: rgb(231, 231, 231);
+    transition: 1s;
+}
+
+li a .active {
+    color: rgb(151, 98, 0);
+}
+
 .navbar .logo a {
     font-size: 1.5rem;
 }
@@ -235,7 +245,7 @@ body.no-scroll {
 /* Media Queries for Responsive Design */
 
 @media (max-width: 992px) {
-    /* Tablet */
+    /* for tablets */
     .navbar .links, .navbar .socials {
         display: none;
     }
@@ -244,14 +254,6 @@ body.no-scroll {
         display: block;
     }
 }
-
-/* @media (max-width: 576px) { 
-    Phone
-    .dropdown_menu {
-        left: 2rem;
-        width: unset;
-    }
-} */
 
 @media (max-height: 760px) and (min-height: 690px) {
     .dropdown_menu.open {
@@ -280,10 +282,11 @@ body.no-scroll {
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #696f8b; 
+    background: #303030; 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #444c6d;
+    background: #686868;
 }
+/* End of Scrollbar Styling */
