@@ -1,0 +1,144 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2C3639;
+    margin: 0;
+    padding: 20px;
+    color: #2C3639;
+}
+
+h2 {
+    color: #A27B5C;
+    margin-top: 0;
+    font-size: 2em;
+}
+.description {
+    min-width: 20px
+    max-width: 50px;
+}
+h3 {
+    color: #A27B5C;
+}
+
+h4 {
+    color:#A27B5C;
+}
+
+p, ul {
+    line-height: 1.6;
+}
+
+/* Container styles */
+.room-description {
+    background: rgba(216, 212, 212, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    display: flex;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.room-description img {
+    width: 40%;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.room-content {
+    width: 60%;
+}
+
+/* Features section */
+.features {
+    margin-bottom: 20px;
+}
+
+.features p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.features i {
+    margin-right: 10px;
+    color: #3F4E4F;
+}
+
+/* Amenities section */
+ul {
+    list-style: none;
+    padding: 0px;
+    display: block;
+    
+}
+
+ul li {
+    background: url('https://img.icons8.com/ios-filled/50/000000/checkmark.png') no-repeat left center;
+    background-size: 20px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    display: block;
+    
+    
+}
+
+
+
+/* Book Now button */
+.book-now {
+    display: block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 14px;
+    position: relative;
+    margin-left: 0%;
+    
+}
+
+.book-now:hover {
+    background-color: #0056b3;
+}
+
+
+hr{
+    height: 1px;
+    color: black;
+    background: black;
+    
+}
+
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .room-description {
+        flex-direction: column;
+    }
+    
+    .room-description img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .room-content {
+        width: 100%;
+    }
+    .book-now{
+        width: 40%;
+    }
+    #coffeetea{
+        margin-left: 0px;
+    }
+}

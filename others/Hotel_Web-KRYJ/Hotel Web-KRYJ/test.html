@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            position: relative;
+            text-align: center;
+            margin-bottom:30px;
+            text-shadow: 3px 3px 10px grey;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            color: #555;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="email"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="text"]:focus,
+        input[type="date"]:focus,
+        input[type="email"]:focus,
+        input[type="number"]:focus,
+        select:focus {
+            border-color: #007bff;
+        }
+        select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 20px;
+            margin-top: 20px;
+            align-items: center;
+            padding-left : 16px;
+            position: relative;
+            text-align: left;
+            text-decoration: none;
+            transition: box-shadow .15s,transform .15s;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            white-space: nowrap;
+            will-change: box-shadow,transform;
+            font-size: 18px;
+        }
+        .button-29:focus {
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+    #buttom1:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+    #buttom1:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+        
+        .form-section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="container">Book your room</h1>
+    <form>
+        <div class="form-section">
+            <label for="Adate">Select your preferred date to arrive:</label>
+            <input type="date" id="Adate" name="Adate">
+        </div>
+        
+        <div class="form-section">
+            <label for="Edate">Select your preferred date to leave:</label>
+            <input type="date" id="Edate" name="Edate">
+        </div>
+
+        <div class="form-section">
+            <label for="room">Preferred room:</label>
+            <select name="room" id="room">
+                <option value="SingleBed">Single Bed Room</option>
+                <option value="Droom">Double Room</option>
+                <option value="DeluxeRoom">Deluxe Room</option>
+                <option value="MRoom">Master Room</option>
+            </select>
+        </div>
+        
+        <h1>Guest information</h1>
+        
+        <div class="form-section">
+            <label for="fname">First Name:</label>
+            <input type="text" name="fname" id="fname">
+        </div>
+
+        <div class="form-section">
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname" id="lname">
+        </div>
+
+        <div class="form-section">
+            <label for="email">Email Address:</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div class="form-section">
+            <label for="phone">Phone Number:</label>
+            <input type="number" name="phone" id="phone">
+        </div>
+        
+        <div class="form-section">
+            <label for="CardNum">Card Number:</label>
+            <input type="text" id="CardNum" name="CardNum">
+        </div>
+
+        <div class="form-section">
+            <label for="CHname">Card Holder Name:</label>
+            <input type="text" name="CHname" id="CHname">
+        </div>
+
+        <div class="form-section">
+            <label for="exp">Exp date (mm/yy):</label>
+            <div style="display: flex; gap: 10px;">
+                <select name="exp_month" id="exp_month">
+                    <option value="mm">MM</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <select name="exp_year" id="exp_year">
+                    <option value="yy">YY</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                    <option value="32">32</option>
+                    <option value="33">33</option>
+                    <option value="34">34</option>
+                    <option value="35">35</option>
+                    <option value="36">36</option>
+                    <option value="37">37</option>
+                    <option value="38">38</option>
+                    <option value="39">39</option>
+                    <option value="40">40</option>
+                    <option value="41">41</option>
+                    <option value="42">42</option>
+                    <option value="43">43</option>
+                    <option value="44">44</option>
+                </select>
+            </div>
+        </div>
+        
+        <input type="submit" value="Submit" id="buttom1">
+    </form>
+</body>
+</html>
