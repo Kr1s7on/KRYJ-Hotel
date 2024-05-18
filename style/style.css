@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 li {
@@ -18,9 +19,14 @@ header {
     z-index: 1000; 
 }
 
+::selection {
+    background: #ebd99f;
+    color: black;
+}
+
 .navbar {
     width: 100%;
-    height: 100px;
+    /* height: 100px; */
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -44,11 +50,12 @@ header {
     font-family: 'Lexend Peta', cursive;
     text-decoration: none;
     color: black;
+    transition: 1s;
 }
 
 .logo a:hover {
     cursor: pointer;
-    text-shadow: #d1d1d1 0px 0px 20px;
+    text-shadow: #c7c7c7 0px 0px 20px;
     transition: 700ms;
 }
 
@@ -125,22 +132,27 @@ li a .active {
     transition: 500ms;
 }
 
+.navbar .book-now-btn 
+
 .navbar .socials a #facebook {
     font-size: 1.5rem;
     color: rgb(0, 0, 0);
     margin-left: 0.5rem;
+    transition: 0.6s;
 }
 
 .navbar .socials a #x {
     font-size: 1.5rem;
     color: rgb(0, 0, 0);
     margin-left: 0.5rem;
+    transition: 0.6s;
 }
 
 .navbar .socials a #instagram {
     font-size: 1.5rem;
     color: rgb(0, 0, 0);
     margin-left: 0.5rem;
+    transition: 0.6s;
 }
 
 .navbar .socials a #facebook:hover,
@@ -148,9 +160,8 @@ li a .active {
 .navbar .socials a:hover #instagram {
     color: rgb(151, 98, 0);
     font-size: 1.5rem;
-    transition: 0.4s;
     text-decoration: none;
-    box-shadow: #b6b6b6 0px 0px 10px;
+    text-shadow: #b6b6b6 0px 0px 3px;
 }
 
 .dropdown_menu .socials a #facebook {
@@ -267,8 +278,89 @@ body.no-scroll {
         margin-top: 14%;
     }
 }
+
+@media screen and (max-width: 992px) {
+    .book-now {
+        display: none;
+    }
+}
 /* End of Media Queries */
 /* End of Navbar */
+
+/* Newsletter */
+.newsletter-container {
+    width: 100%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-container h2 {
+    margin-bottom: 15px;
+    font-family: 'Lexend Peta', cursive;
+    color: rgb(165, 123, 18);
+    font-weight: 300;
+}
+
+.newsletter-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.newsletter-container .newsletter-p {
+    font-size: 18px;
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.newsletter-container form input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 60%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-container form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(165, 123, 18);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.6s;
+}
+
+.newsletter-container form button:hover {
+    background-color: rgb(151, 98, 0);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Media query for screens larger than 600px */
+@media (min-width: 600px) {
+    .newsletter-container {
+        padding: 50px;
+    }
+
+    .newsletter-container form {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .newsletter-container form input[type="email"] {
+        width: 30%;
+    }
+}
+/* End of Newsletter */
 
 /* Scrollbar Styling */
 /* Width */
@@ -278,7 +370,7 @@ body.no-scroll {
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #ffffff; 
+    background: rgb(165, 123, 18); 
 }
  
 /* Handle */
@@ -291,3 +383,52 @@ body.no-scroll {
     background: #686868;
 }
 /* End of Scrollbar Styling */
+
+/* Booking Notif */
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#booking-notif {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    transform: translate(-50%, 50%); /* Adjust for exact centering */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* Adjust this value as needed */
+    transform: translateX(-50%); /* Adjust for horizontal centering */
+}
+  
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#booking-notif.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+  
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+  

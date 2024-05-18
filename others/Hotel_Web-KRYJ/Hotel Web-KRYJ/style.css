@@ -6,6 +6,7 @@ body {
     padding: 20px;
     color: #333;
     overflow: scroll;
+    -webkit-font-smoothing: antialiased;
 }
 
 h2 {
@@ -64,6 +65,15 @@ ul li {
     background-size: 20px;
     padding-left: 30px;
     margin-bottom: 10px;
+}
+
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+  
+.cd-top--fade-out {
+    opacity: .5;
 }
 
 /* Media queries for responsiveness */

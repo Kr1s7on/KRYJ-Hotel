@@ -69,3 +69,138 @@ body {
     transition: 1s;
 }
 /* End of home vdeo */
+
+/* About */
+#home-about-section {
+    text-align: center;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s, transform 1s;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+#home-about-section h2 {
+    font-family: 'Lexend Peta', cursive;
+    font-weight: 300;
+    margin-bottom: 15px;
+    color: rgb(165, 123, 18);
+}
+
+#home-about-para {
+    padding-top: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+.book-now-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    background-color: rgb(165, 123, 18);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.6s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    vertical-align: middle;
+}
+
+.book-now-btn:hover {
+    background-color: rgb(151, 98, 0);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.book-now-btn a {
+    color: white;
+    text-decoration: none;
+}
+/* End of About */
+
+/* Review*/
+.home-review-section {
+    text-align: center;
+    transition: opacity 1s, transform 1s;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: url(../assets/images/prague-view.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.home-review-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust the 0.5 to change the darkness of the filter */
+    z-index: 1;
+}
+
+.home-review-section * {
+    position: relative;
+    z-index: 2;
+}
+
+.home-review-section h2 {
+    font-family: 'Lexend Peta', cursive;
+    font-weight: 300;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    color: white;
+}
+
+.review-text {
+    margin-top: 10px;
+    font-size: 27px;
+    padding-top: 40px;
+}
+
+.review-text a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.review-text a:hover {
+    color: rgb(231, 187, 73);
+}
+
+#vogue-text {
+    font-family: 'GFS Didot', serif;
+}
+
+/* End of Review */
+
+/* Rooms */
+
+/* End of Rooms */
+
+/* Deco */
+.white-line {
+    position: relative;
+}
+.white-line::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 70px; /* Adjust this value to change the length of the underline */
+    border-bottom: 1px solid rgb(165, 123, 18); /* Adjust this value to change the color and thickness of the underline */
+    transform: translateX(-50%);
+}
+
+.fade-and-move-up {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+/* End of Deco */
