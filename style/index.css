@@ -179,6 +179,12 @@ body {
     font-family: 'GFS Didot', serif;
 }
 
+/* For mobile devices */
+@media (max-width: 768px) {
+    .home-review-section {
+        background-attachment: scroll;
+    }
+}
 /* End of Review */
 
 /* Content */
