@@ -190,12 +190,12 @@ body {
 }
 
 /* For mobile devices */
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
     .home-review-section {
         background-attachment: scroll;
     }
 } */
-/* End of Review */
+/* End of Review
 
 /* Content */
 .card-container {
