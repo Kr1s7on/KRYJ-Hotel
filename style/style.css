@@ -389,7 +389,6 @@ body.no-scroll {
 #booking-notif {
     visibility: hidden; /* Hidden by default. Visible on click */
     min-width: 250px; /* Set a default minimum width */
-    transform: translate(-50%, 50%); /* Adjust for exact centering */
     background-color: #333; /* Black background color */
     color: #fff; /* White text color */
     text-align: center; /* Centered text */
@@ -401,7 +400,7 @@ body.no-scroll {
     bottom: 30px; /* Adjust this value as needed */
     transform: translateX(-50%); /* Adjust for horizontal centering */
 }
-  
+
 /* Show the snackbar when clicking on a button (class added with JavaScript) */
 #booking-notif.show {
     visibility: visible; /* Show the snackbar */
