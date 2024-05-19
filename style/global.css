@@ -395,7 +395,7 @@ body.no-scroll {
     border-radius: 2px; /* Rounded borders */
     padding: 16px; /* Padding */
     position: fixed; /* Sit on top of the screen */
-    z-index: 1; /* Add a z-index if needed */
+    z-index: 5; /* Add a z-index if needed */
     left: 50%; /* Center the snackbar */
     bottom: 30px; /* Adjust this value as needed */
     transform: translateX(-50%); /* Adjust for horizontal centering */
