@@ -430,4 +430,144 @@ body.no-scroll {
     from {bottom: 30px; opacity: 1;}
     to {bottom: 0; opacity: 0;}
 }
-  
+/* End of Booking Notif */
+
+/* Footer */
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #1d1d1d;
+    color: white;
+    font-size: 12px;
+	font-family: 'Lexend Peta';
+	font-weight: 400;
+}
+
+.copyright p {
+	margin: 0;
+}
+
+.copyright p a {
+    position: relative;
+    text-decoration: none;
+	color: white;
+	transition: color .3s;
+}
+
+.copyright p a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -5px; /* Adjust this value to move the underline up or down */
+    left: 50%;
+    background: #fff; /* Change to desired underline color */
+    transition: all 1s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.copyright p a:hover::after {
+    visibility: visible;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer {
+	background-color: #000000;
+    padding: 70px 0;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.footer-col {
+   width: 25%;
+   padding: 0 15px;
+}
+
+.footer-col h4 {
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before {
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #c2ad80;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #c9c9c9;
+	display: block;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+	color: #ffffff;
+	padding-left: 5px;
+}
+
+.footer-col .social-links a {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/* For mobile */
+@media(max-width: 767px) {
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+	}
+}
+@media(max-width: 574px) {
+  .footer-col{
+    width: 70%;
+	margin-left: 10px;
+	}
+}
+/* End of Footer */

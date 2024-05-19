@@ -70,12 +70,22 @@ body {
 }
 /* End of home vdeo */
 
-/* About */
-#home-about-section {
-    text-align: center;
+/* Fade Anim */
+#home-about-section,
+#v-review,
+#vogue-text,
+#cc-title,
+.card-container,
+.newsletter-container {
     opacity: 0;
     transform: translateY(40px);
     transition: opacity 1s, transform 1s;
+}
+/* End of Fade Anim */
+
+/* About */
+#home-about-section {
+    text-align: center;
     padding-top: 90px;
     padding-bottom: 90px;
 }
