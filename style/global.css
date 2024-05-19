@@ -10,6 +10,38 @@ li {
     list-style: none;
 }
 
+/* font for the entire body */
+body {
+    font-family: 'Urbanist', sans-serif;
+}
+
+/* Book Now Btn */
+.book-now-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    background-color: rgb(165, 123, 18);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.6s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    vertical-align: middle;
+}
+
+.book-now-btn:hover {
+    background-color: rgb(151, 98, 0);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.book-now-btn a {
+    color: white;
+    text-decoration: none;
+}
+/* End of Btn */
+
 /* Everythng Navbar */
 header {
     position: sticky;
@@ -56,7 +88,6 @@ header {
 .logo a:hover {
     cursor: pointer;
     text-shadow: #c7c7c7 0px 0px 20px;
-    transition: 700ms;
 }
 
 .navbar .links a,
@@ -96,8 +127,6 @@ header {
 
 .dropdown_menu li:hover {
     font-size: 1.5rem;
-    background-color: rgb(231, 231, 231);
-    transition: 1s;
 }
 
 li a .active {
@@ -238,7 +267,7 @@ body.no-scroll {
 
 .dropdown_menu li {
     /* padding: 0.7rem; */
-    padding: 2.5rem;
+    padding: 1.4rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -571,3 +600,24 @@ ul {
 	}
 }
 /* End of Footer */
+
+/* Deco */
+.white-line {
+    position: relative;
+}
+
+.white-line::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 70px; /* Adjust this value to change the length of the underline */
+    border-bottom: 1px solid rgb(165, 123, 18); /* Adjust this value to change the color and thickness of the underline */
+    transform: translateX(-50%);
+}
+
+.fade-and-move-up {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+/* End of Deco */

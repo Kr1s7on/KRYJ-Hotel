@@ -1,8 +1,3 @@
-/* font for the entire body */
-body {
-    font-family: 'Urbanist', sans-serif;
-}
-
 /* Home Video */
 .home-video video {
     width: 100%;
@@ -104,30 +99,6 @@ body {
     font-size: 18px;
 }
 
-.book-now-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 18px;
-    text-align: center;
-    color: white;
-    background-color: rgb(165, 123, 18);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.6s;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    vertical-align: middle;
-}
-
-.book-now-btn:hover {
-    background-color: rgb(151, 98, 0);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-}
-
-.book-now-btn a {
-    color: white;
-    text-decoration: none;
-}
 /* End of About */
 
 /* Review*/
@@ -193,6 +164,12 @@ body {
 @media (max-width: 768px) {
     .home-review-section {
         background-attachment: scroll;
+        height: 100vh;
+        padding: 0;
+    }
+
+    #v-review {
+        padding-top: 42vh;
     }
 }
 /* End of Review */
@@ -298,23 +275,3 @@ body {
     }
 }
 /* End of Content */
-
-/* Deco */
-.white-line {
-    position: relative;
-}
-.white-line::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: 70px; /* Adjust this value to change the length of the underline */
-    border-bottom: 1px solid rgb(165, 123, 18); /* Adjust this value to change the color and thickness of the underline */
-    transform: translateX(-50%);
-}
-
-.fade-and-move-up {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
-}
-/* End of Deco */
