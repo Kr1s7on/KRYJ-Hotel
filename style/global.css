@@ -420,20 +420,19 @@ body.no-scroll {
 /* End of Scrollbar Styling */
 
 /* Booking Notif */
-/* The snackbar - position it at the bottom and in the middle of the screen */
 #booking-notif {
     visibility: hidden; /* Hidden by default. Visible on click */
-    min-width: 250px; /* Set a default minimum width */
-    background-color: #333; /* Black background color */
-    color: #fff; /* White text color */
-    text-align: center; /* Centered text */
-    border-radius: 2px; /* Rounded borders */
-    padding: 16px; /* Padding */
-    position: fixed; /* Sit on top of the screen */
-    z-index: 5; /* Add a z-index if needed */
-    left: 50%; /* Center the snackbar */
-    bottom: 30px; /* Adjust this value as needed */
-    transform: translateX(-50%); /* Adjust for horizontal centering */
+    min-width: 250px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 5;
+    left: 50%; /* Center */
+    bottom: 30px;
+    transform: translateX(-50%); /* horizontal centering */
 }
 
 /* Show the snackbar when clicking on a button (class added with JavaScript) */

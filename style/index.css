@@ -123,7 +123,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.4); /* Adjust the 0.5 to change the darkness of the filter */
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the 0.5 to change the darkness of the filter */
     z-index: 1;
 }
 
@@ -163,7 +163,7 @@
 /* For mobile devices */
 @media (max-width: 768px) {
     .home-review-section {
-        background-attachment: scroll;
+        /* background-attachment: scroll; */ /* Enable if actually deployed */
         height: 100vh;
         padding: 0;
     }
