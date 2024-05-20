@@ -284,6 +284,12 @@ body.no-scroll {
 
 
 /* Media Queries for Responsive Design */
+@media (max-width: 599px) {
+    /* for tablets */
+    .newsletter-container form button {
+        margin-top: 10px;
+    }
+}
 
 @media (max-width: 992px) {
     /* for tablets */
