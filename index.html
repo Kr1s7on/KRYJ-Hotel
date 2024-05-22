@@ -35,7 +35,7 @@
           </div>
 
           <ul class="links">
-              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html" class="active">Home</a></li>
               <li><a href="rooms.html">Rooms</a></li>
               <li><a href="dine.html">Dine</a></li>
               <li><a href="facilities.html">Facilities</a></li>
@@ -50,7 +50,7 @@
           </div> -->
 
           <div class="book-now">
-            <button class="book-now-btn" onclick="myFunction()">
+            <button class="book-now-btn">
               Book Now
               <!-- <a href="index.html">Book Now</a> -->
             </button>
@@ -110,7 +110,7 @@
       <h2>Nestled in the Heart of Prague</h2>
       <p class="white-line"></p>
       <p id="home-about-para">A combination of modern elegance with timeless charm to offer you an unforgettable experience. Whether you are here for a romantic getaway, a family vacation, or a business trip, KRYJ provides the perfect blend of comfort and sophistication.</p>
-      <button class="book-now-btn" onclick="myFunction()">Book Now</button>
+      <a href="room-booking-form.html"><button class="book-now-btn">Book Now</button></a>
     </div>
     <!-- End of About KRYJ -->
 
@@ -129,6 +129,7 @@
     <h2 id="cc-title">Explore</h2>
     <p class="white-line"></p>
     <div class="card-container">
+      <!-- Stay Card -->
       <a href="#" class="card">
           <div class="card-img">
             <img src="assets/images/bed.jpg" alt="Rooms">
@@ -136,9 +137,12 @@
           <div class="card-content">
               <h2 class="card-title">Stay with Us</h2>
               <p>Experience a blend of comfort and luxury in our elegantly designed rooms and suites</p>
-              <button onclick="myFunction()">Read More</button>
+              <button>Read More</button>
           </div>
       </a>
+      <!-- End of Stay Card -->
+
+      <!-- Dine Card -->
       <a href="#" class="card">
           <div class="card-img">
             <img src="assets/images/food.jpg" alt="Food">
@@ -146,9 +150,12 @@
           <div class="card-content">
               <h2 class="card-title">Dine Local</h2>
               <p>Savor the flavors of authentic Czech cuisine and international dishes crafted by our renowned chefs.</p>
-              <button onclick="myFunction()">Read More</button>
+              <button>Read More</button>
           </div>
       </a>
+      <!-- End of Dine Card -->
+
+      <!-- Explore Card -->
       <a href="#" class="card">
           <div class="card-img">
             <img src="assets/images/prague-church.jpg" alt="Attractions">
@@ -156,15 +163,12 @@
           <div class="card-content">
               <h2 class="card-title">Explore </h2>
               <p>Discover the rich history and vibrant culture of Prague with easy access to famous landmarks and hidden gems.</p>
-              <button onclick="myFunction()">Read More</button>
+              <button>Read More</button>
           </div>
       </a>
+      <!-- End of Explore Card -->
     </div>
     <!-- Content Cards -->
-
-    <!-- Notif -->
-    <div id="booking-notif">This feature is currently under development.</div>
-    <!-- End -->
 
     <!-- Start of Newsletter Signup -->
     <div class="newsletter-container">
@@ -241,7 +245,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <!-- Local Scripts -->
     <script src="js/nav-dropdown.js"></script>
-    <!-- <script src="js/home-down-button.js"></script> -->
     <script src="js/scroll-fade.js"></script>
     <script src="js/anti-scroll-dropdown.js"></script>
     <script src="js/toast-notif.js"></script>
