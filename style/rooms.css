@@ -1,37 +1,11 @@
-* {
-    box-sizing: border-box;
-}
-/*company style name*/
-#hotel-kryj{
-    color:black;
-    margin-bottom: 100px;
-    margin-top: 80px;
-}
-/*styling for all the h1 tag*/
-h1 {
-    font-size: 2em;
-    margin-top: 50px;
-    margin-bottom: 5px;
-    color: rgb(190, 165, 23);
-    text-align: center;
-    letter-spacing: 10px;
-}
 /*the header text*/
 #header-text{
-    font-size: 2.5em;
-    letter-spacing: 5px;
-
-}
-h2 {
-    color: rgb(190, 165, 23);
+    font-family: 'Lexend Peta', cursive;
+    font-weight: 300;
+    color: rgb(165, 123, 18);
     text-align: center;
 }
-hr {
-    color: rgb(190, 165, 23);
-    width: 50px;
-    margin: 0 auto;
-    margin-top: 10px;
-}
+
 /*Introduction word*/
 #para-1 {
     font-size: 1.5em;
@@ -42,6 +16,7 @@ hr {
     margin-bottom: 100px;
     
 }
+
 /*Container style*/
 #container {
     margin-top: 50px;
@@ -49,6 +24,7 @@ hr {
     justify-content: space-around;
     margin-bottom: 150px;
 }
+
 /*Every single room style*/
 .room-1{
     width: 30%;
@@ -59,11 +35,13 @@ hr {
     flex-direction: column;
     justify-content: space-between;
 }
+
 .room-1 p{
     padding: 20px;
     flex-grow: 1;
     line-height: 25px;
 }
+
 .room-1 img {
     width: 100%;
     height: auto;
@@ -71,41 +49,43 @@ hr {
     margin: 0 auto;
     border-radius: 7px;
 }
+
 /*The text "Discover me" styling*/
 span{
     display: flex;
     justify-content: center;
 }
+
 span h3 {
     color: rgb(108, 92, 3);
     text-align: center;
     position: relative;
     margin-bottom: 20px;
 }
+
 span h3:hover {
     color: gold;
 }
 
-/*Responsive*/
+/* Media Tags */
 @media (max-width: 768px) {
-            #container{
-                flex-direction: column;
-                align-items: center;
-                
-            }
-            .room-1 {
-                width: 80%;
-                display:block;
-                margin-bottom: 50px;
-            }
-        }
-        @media (max-width: 480px) {
-            .room-1 {
-                width: 95%;
-                
-            }
-            #para-1 {
-                width: 95%;
-                margin-bottom: 50px;
-            }
-        }
+    #container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .room-1 {
+        width: 80%;
+        display: block;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .room-1 {
+        width: 95%;
+    }
+    #para-1 {
+        width: 95%;
+        margin-bottom: 50px;
+    }
+}
