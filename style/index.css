@@ -152,11 +152,12 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform .9s;
+    transition: .9s;
 }
 
 .card:hover img {
     transform: scale(1.1);
+    filter: saturate(1.3);
 }
 
 .card-content {
