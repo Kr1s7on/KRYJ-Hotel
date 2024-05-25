@@ -689,6 +689,18 @@ ul {
     transform: translateX(-50%);
 }
 
+.astk {
+    color: rgb(165, 123, 18);
+    font-size: larger;
+    font-weight: 500;
+}
+
+.optional-txt {
+    color: grey;
+    font-style: italic;
+    font-size: smaller
+}
+
 /* .fade-and-move-up {
     animation: fadeAndMoveUp 1s forwards;
 }

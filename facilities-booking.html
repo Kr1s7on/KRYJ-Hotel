@@ -81,10 +81,10 @@
     <div class="container" id="ctn-form-ct">
         <h2 id="ctn-header">Facilities Reservation</h2>
         <p class="white-line"></p><br>
-        <form action="#" method="post">
+        <form action="#" method="post" id="facilities-form">
             <fieldset>
                 <div class="input-field">
-                    <label for="name">Full Name</label>
+                    <label for="name">Full Name<span class="astk">*</span></label>
                     <br>
                     <input type="text" id="name" name="name" placeholder="Your full name" required aria-label="Name">
                 </div>
@@ -92,7 +92,7 @@
                 <br>
 
                 <div class="input-field">
-                    <label for="email">Email</label>
+                    <label for="email">Email<span class="astk">*</span></label>
                     <br>
                     <input type="email" id="email" name="email" required placeholder="Your email address" aria-label="Email">
                 </div>
@@ -100,7 +100,7 @@
                 <br>
 
                 <div class="input-field">
-                    <label for="phone">Phone Number</label>
+                    <label for="phone">Phone Number<span class="astk">*</span></label>
                     <br>
                     <input type="tel" id="phone" name="phone" required placeholder="Your phone number" aria-label="Phone Number">
                 </div>
@@ -108,7 +108,7 @@
                 <br>
 
                 <div class="input-field">
-                    <label for="facility">Facility</label>
+                    <label for="facility">Facility<span class="astk">*</span></label>
                     <br>
                     <select id="subject" name="subject" required aria-label="Subject">
                         <option value="">Please select</option>
@@ -121,7 +121,7 @@
                 <br>
 
                 <div class="input-field">
-                    <label for="date">Date</label>
+                    <label for="date">Date<span class="astk">*</span></label>
                     <br>
                     <input type="date" id="date" name="date" required aria-label="Date">
                 </div>
@@ -129,7 +129,7 @@
                 <br>
                 
                 <div class="input-field">
-                    <label for="time">Time</label>
+                    <label for="time">Time<span class="astk">*</span></label>
                     <br>
                     <input type="time" id="time" name="time" required aria-label="Time">
                 </div>
@@ -137,7 +137,7 @@
                 <br>
 
                 <div class="input-field">
-                    <label for="party-size">Party Size</label>
+                    <label for="party-size">Party Size<span class="astk">*</span></label>
                     <br>
                     <input type="number" id="party-size" name="party-size" required placeholder="Enter the number of people" aria-label="Party Size">
                 </div>
@@ -145,9 +145,9 @@
                 <br>
 
                 <div class="input-field">
-                    <label for="message">Special Request</label>
+                    <label for="message">Special Request&nbsp;<span class="optional-txt">(optional)</span></label>
                     <br>
-                    <textarea id="message" name="message" rows="4" cols="50" required placeholder="Enter your message" aria-label="Message"></textarea>
+                    <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message" aria-label="Message"></textarea>
                 </div>
 
                 <br><br>
