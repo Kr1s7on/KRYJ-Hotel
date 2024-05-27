@@ -20,7 +20,7 @@
         <!-- End of Ajax -->
         <!-- Local CSS -->
         <link rel="stylesheet" href="style/global.css">
-        <link rel="stylesheet" href="style/facilities-booking.css">
+        <link rel="stylesheet" href="style/form-confirmation-page.css">
         <!-- End of Local CSS -->
         <title>KRYJ - Facilities Reservation</title>
     </head>
@@ -79,82 +79,16 @@
 
     <!-- Reservation Form -->
     <div class="container" id="ctn-form-ct">
-        <h2 id="ctn-header">Facilities Reservation</h2>
+        <h2 id="ctn-header">Thank you!</h2>
         <p class="white-line"></p><br>
-        <form action="form-confirmation-page.html" method="post" id="facilities-form">
-            <fieldset>
-                <div class="input-field">
-                    <label for="name">Full Name<span class="astk">*</span></label>
-                    <br>
-                    <input type="text" id="name" name="name" placeholder="Your full name" required aria-label="Name">
-                </div>
-
+        <section class="confirmation-txt">
+            <p>
+                A confirmation email has been sent to your inbox.
                 <br>
-
-                <div class="input-field">
-                    <label for="email">Email<span class="astk">*</span></label>
-                    <br>
-                    <input type="email" id="email" name="email" required placeholder="Your email address" aria-label="Email">
-                </div>
-
-                <br>
-
-                <div class="input-field">
-                    <label for="phone">Phone Number<span class="astk">*</span></label>
-                    <br>
-                    <input type="tel" id="phone" name="phone" required placeholder="Your phone number" aria-label="Phone Number">
-                </div>
-
-                <br>
-
-                <div class="input-field">
-                    <label for="facility">Facility<span class="astk">*</span></label>
-                    <br>
-                    <select id="subject" name="subject" required aria-label="Subject">
-                        <option value="">Please select</option>
-                        <option value="spa">Spa</option>
-                        <option value="restaurant">Restaurace KRYJ</option>
-                        <option value="meeting-rooms">Meeting Rooms</option>
-                    </select>
-                </div>
-
-                <br>
-
-                <div class="input-field">
-                    <label for="date">Date<span class="astk">*</span></label>
-                    <br>
-                    <input type="date" id="date" name="date" required aria-label="Date">
-                </div>
-
-                <br>
-                
-                <div class="input-field">
-                    <label for="time">Time<span class="astk">*</span></label>
-                    <br>
-                    <input type="time" id="time" name="time" required aria-label="Time">
-                </div>
-
-                <br>
-
-                <div class="input-field">
-                    <label for="party-size">Party Size<span class="astk">*</span></label>
-                    <br>
-                    <input type="number" id="party-size" name="party-size" required placeholder="Enter the number of people" aria-label="Party Size">
-                </div>
-
-                <br>
-
-                <div class="input-field">
-                    <label for="message">Special Request&nbsp;<span class="optional-txt">(optional)</span></label>
-                    <br>
-                    <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message" aria-label="Message"></textarea>
-                </div>
-
-                <br><br>
-
-                <input type="submit" value="Submit">
-            </fieldset>
-        </form>
+                For any inquiries, please contact us at <a href="mailto:kryj@inquiries.cz">inquiries@kryj.cz</a>
+            </p>
+            <a href="facilities.html" id="return-btn"><button>Return Home</button></a>
+        </section>
     </div>
     <!-- End of Reservation Form -->
 
