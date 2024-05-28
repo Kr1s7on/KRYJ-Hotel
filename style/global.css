@@ -5,6 +5,10 @@
     scroll-behavior: smooth;
 }
 
+html {
+    background-color: black;
+}
+
 li {
     list-style: none;
 }
