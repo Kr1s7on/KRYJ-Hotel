@@ -83,30 +83,37 @@
         <p class="white-line"></p><br>
         <form action="form-confirmation-page.html" method="post" id="facilities-form">
             <fieldset>
+                <!-- Name Field -->
                 <div class="input-field">
                     <label for="name">Full Name<span class="astk">*</span></label>
                     <br>
                     <input type="text" id="name" name="name" placeholder="Your full name" required aria-label="Name">
                 </div>
+                <!-- End of Name Field -->
 
                 <br>
 
+                <!-- Email Field -->
                 <div class="input-field">
                     <label for="email">Email<span class="astk">*</span></label>
                     <br>
                     <input type="email" id="email" name="email" required placeholder="Your email address" aria-label="Email">
                 </div>
+                <!-- End of Email Field -->
 
                 <br>
 
+                <!-- Phone Field -->
                 <div class="input-field">
                     <label for="phone">Phone Number<span class="astk">*</span></label>
                     <br>
                     <input type="tel" id="phone" name="phone" required placeholder="Your phone number" aria-label="Phone Number">
                 </div>
+                <!-- End of Phone Field -->
 
                 <br>
 
+                <!-- Facility Field -->
                 <div class="input-field">
                     <label for="facility">Facility<span class="astk">*</span></label>
                     <br>
@@ -117,42 +124,53 @@
                         <option value="meeting-rooms">Meeting Rooms</option>
                     </select>
                 </div>
+                <!-- End of Facility Field -->
 
                 <br>
 
+                <!-- Date Field -->
                 <div class="input-field">
                     <label for="date">Date<span class="astk">*</span></label>
                     <br>
-                    <input type="date" id="date" name="date" required aria-label="Date">
+                    <input type="date" id="date" name="date" required aria-label="Date" min="2024-05-29">
                 </div>
+                <!-- End of Date Field -->
 
                 <br>
                 
+                <!-- Time Field -->
                 <div class="input-field">
                     <label for="time">Time<span class="astk">*</span></label>
                     <br>
                     <input type="time" id="time" name="time" required aria-label="Time">
                 </div>
+                <!-- End of Time Field -->
 
                 <br>
 
+                <!-- Party Size Field -->
                 <div class="input-field">
                     <label for="party-size">Party Size<span class="astk">*</span></label>
                     <br>
                     <input type="number" id="party-size" name="party-size" required placeholder="Enter the number of people" aria-label="Party Size" min="1">
                 </div>
+                <!-- End of Party Size Field -->
 
                 <br>
 
+                <!-- Special Request Field -->
                 <div class="input-field">
                     <label for="message">Special Request&nbsp;<span class="optional-txt">(optional)</span></label>
                     <br>
                     <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message" aria-label="Message"></textarea>
                 </div>
+                <!-- End of Special Request Field -->
 
                 <br><br>
 
+                <!-- Submit Button -->
                 <input type="submit" value="Submit">
+                <!-- End of Submit Button -->
             </fieldset>
         </form>
     </div>

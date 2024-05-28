@@ -52,11 +52,6 @@ body {
     transform: scale(1.05);
 }
 
-/* Spacer */
-.spacer {
-    padding-bottom: 130px;
-}
-
 /* Content */
 .card-container {
     display: flex;

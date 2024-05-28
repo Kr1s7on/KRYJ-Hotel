@@ -1,0 +1,21 @@
+/* About */
+#home-about-section {
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+#home-about-section h2 {
+    font-family: 'Lexend Peta', cursive;
+    font-weight: 300;
+    margin-bottom: 15px;
+    color: rgb(165, 123, 18);
+}
+
+#home-about-para {
+    padding-top: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+/* End of About */

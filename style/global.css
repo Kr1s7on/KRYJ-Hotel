@@ -5,10 +5,6 @@
     scroll-behavior: smooth;
 }
 
-html {
-    background-color: black;
-}
-
 li {
     list-style: none;
 }
@@ -703,6 +699,10 @@ ul {
     color: grey;
     font-style: italic;
     font-size: smaller
+}
+
+.spacer {
+    padding-bottom: 130px;
 }
 
 /* .fade-and-move-up {
