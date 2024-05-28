@@ -9,12 +9,11 @@ li {
     list-style: none;
 }
 
-/* font for the entire body */
 body {
     font-family: 'Urbanist', sans-serif;
 }
 
-/* Home Video */
+/* Video */
 .home-video video {
     width: 100%;
     height: 100vh;
@@ -79,9 +78,9 @@ body {
     color: goldenrod;
     transition: 1s;
 }
-/* End of home vdeo */
+/* End of Video */
 
-/* Book Now Btn */
+/* Book Now Button */
 .book-now-btn {
     display: inline-block;
     padding: 10px 20px;
@@ -486,53 +485,6 @@ body.no-scroll {
     background: #686868;
 }
 /* End of Scrollbar Styling */
-
-/* Booking Notif */
-#booking-notif {
-    visibility: hidden; /* Hidden by default. Visible on click */
-    min-width: 250px;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    border-radius: 2px;
-    padding: 16px;
-    position: fixed;
-    z-index: 5;
-    left: 50%; /* Center */
-    bottom: 30px;
-    transform: translateX(-50%); /* horizontal centering */
-}
-
-/* Show the snackbar when clicking on a button (class added with JavaScript) */
-#booking-notif.show {
-    visibility: visible; /* Show the snackbar */
-    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
-    However, delay the fade out process for 2.5 seconds */
-    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-    animation: fadein 0.5s, fadeout 0.5s 2.5s;
-}
-  
-/* Animations to fade the snackbar in and out */
-@-webkit-keyframes fadein {
-    from {bottom: 0; opacity: 0;}
-    to {bottom: 30px; opacity: 1;}
-}
-
-@keyframes fadein {
-    from {bottom: 0; opacity: 0;}
-    to {bottom: 30px; opacity: 1;}
-}
-
-@-webkit-keyframes fadeout {
-    from {bottom: 30px; opacity: 1;}
-    to {bottom: 0; opacity: 0;}
-}
-
-@keyframes fadeout {
-    from {bottom: 30px; opacity: 1;}
-    to {bottom: 0; opacity: 0;}
-}
-/* End of Booking Notif */
 
 /* Footer */
 .container{

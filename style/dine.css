@@ -19,3 +19,50 @@
     font-size: 18px;
 }
 /* End of About */
+
+/* Styles for Container */
+#room-card-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 150px;
+}
+
+/* Images section, CSS adapted from index.css*/
+.home-review-section {
+    text-align: center;
+    transition: opacity 1s, transform 1s;
+    padding-top: 320px;
+    padding-bottom: 320px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.home-review-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the 0.5 to change the darkness of the filter */
+    z-index: 1;
+}
+
+.home-review-section * {
+    position: relative;
+    z-index: 2;
+}
+
+.home-review-section h2 {
+    font-family: 'Lexend Peta', cursive;
+    font-weight: 300;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    color: white;
+}
+/* End of images section */

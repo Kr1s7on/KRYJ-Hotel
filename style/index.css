@@ -93,10 +93,11 @@
     transition: 0.5s;
 }
 
-/* For mobile devices */
+/* Media Tags for Mobile */
 @media (max-width: 768px) {
     .home-review-section {
-        /* background-attachment: scroll; */ /* Enable if actually deployed */
+        /* background-attachment: scroll; */ 
+        /* Enable if actually deployed, if not then super laggy on Android and looks bad on iOS */
         height: 100vh;
         padding: 0;
     }
@@ -144,7 +145,7 @@
 }
 
 .card-img {
-    height: 400px; /* Set the height you want */
+    height: 400px;
     overflow: hidden;
 }
 
