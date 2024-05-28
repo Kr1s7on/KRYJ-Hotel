@@ -111,7 +111,7 @@
                     <label for="facility">Facility<span class="astk">*</span></label>
                     <br>
                     <select id="subject" name="subject" required aria-label="Subject">
-                        <option value="">Please select</option>
+                        <option value="" selected disabled>Please select</option>
                         <option value="spa">Spa</option>
                         <option value="restaurant">Restaurace KRYJ</option>
                         <option value="meeting-rooms">Meeting Rooms</option>
@@ -139,7 +139,7 @@
                 <div class="input-field">
                     <label for="party-size">Party Size<span class="astk">*</span></label>
                     <br>
-                    <input type="number" id="party-size" name="party-size" required placeholder="Enter the number of people" aria-label="Party Size">
+                    <input type="number" id="party-size" name="party-size" required placeholder="Enter the number of people" aria-label="Party Size" min="1">
                 </div>
 
                 <br>
