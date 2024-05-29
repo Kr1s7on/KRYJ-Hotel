@@ -41,6 +41,7 @@ The resources for this project were taken from various sources including:
 - [Responsive Navbar](https://github.com/itzzmerov/responsive-navbar) by itzzmerov
 - [Infinite Scrolling Animations](https://github.com/constgenius/InfiniteScroll) by constgenius
 - [Icons8](https://icons8.com/) for Icons
+- [W3Schools](https://www.w3schools.com/) for Guides
 
 ## Frameworks Used
 
