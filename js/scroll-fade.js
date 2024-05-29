@@ -1,3 +1,5 @@
+// NOT implemented in the project, work in progress, basically to animate elements on scroll, but kinda laggy
+
 let elements;
 
 function checkPosition() {

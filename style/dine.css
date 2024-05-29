@@ -109,21 +109,21 @@
 
 @keyframes scroll {
     0% {
-        transform: translateX(100%);
+        transform: translateX(10%);
     }
 
     100% {
-        transform: translateX(-100%);
+        transform: translateX(100%);
     }
 }
 
 @keyframes scroll2 {
     0% {
-        transform: translateX(0);
+        transform: translateX(99%);
     }
 
     100% {
-        transform: translateX(-200%);
+        transform: translateX(100%);
     }
 }
 
