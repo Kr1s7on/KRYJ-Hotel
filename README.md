@@ -34,6 +34,10 @@ IT1301-UX-Design-KRYJ
 
 This project was worked on by Kriston, Joon Yin, Yu En, Rui Xuan.
 
+## Demo
+
+https://kr1s7on.github.io/IT1301-UX-Design-KRYJ/
+
 ## Resources Taken From
 
 The resources for this project were taken from various sources including:
