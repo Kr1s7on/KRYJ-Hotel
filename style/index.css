@@ -1,14 +1,14 @@
 /* Fade Anim */
-/* #home-about-section,
-#v-review,
-#vogue-text,
-#cc-title,
-.card-container,
-.newsletter-container {
+.animate-on-scroll {
     opacity: 0;
     transform: translateY(40px);
     transition: opacity 1s, transform 1s;
-} */
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 /* End of Fade Anim */
 
 /* About */
