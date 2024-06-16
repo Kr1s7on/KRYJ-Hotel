@@ -102,7 +102,6 @@
 
 .scroll div:nth-child(2) {
     animation: scroll var(--time) linear infinite;
-    animation-delay: var(--time) / 2;
 }
 
 @keyframes scroll {

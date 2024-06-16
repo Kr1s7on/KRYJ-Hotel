@@ -656,19 +656,16 @@ ul {
     padding-bottom: 130px;
 }
 
-/* .fade-and-move-up {
-    animation: fadeAndMoveUp 1s forwards;
+/* Fade Anim */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s, transform 1s;
 }
-  
-@keyframes fadeAndMoveUp {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
 
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-} */
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* End of Fade Anim */
 /* End of Deco */
