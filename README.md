@@ -60,10 +60,12 @@ This project uses several frameworks to enhance the user experience and simplify
 ## Tools Used
 
 ### Debugging
+
 - GitHub Copilot
 - ChatGPT
 
 ### Source Control
+
 - GitHub
 
 ## Misc

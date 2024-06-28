@@ -12,7 +12,6 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100..900&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
       <!-- End of Google Fonts -->
       <!-- Ajax -->
@@ -28,6 +27,12 @@
       <!-- ======================================================== -->
   </head>
 <body>
+    <!-- Preloader -->
+    <div class="preloader">
+      <img src="assets/images/logo/KRYJ.png" alt="KRYJ Logo" width="200px" height="200px">
+    </div>
+    <!-- End of Preloader -->
+
     <!-- Navigation Bar -->
     <header>
       <div class="navbar">
@@ -110,7 +115,7 @@
       <!-- Stay Card -->
       <a href="rooms.html" class="card">
           <div class="card-img">
-            <img src="assets/images/deluxe-room/sid-bed.jpg" alt="Rooms">
+            <img src="assets/images/deluxe-room/sid-bed.jpg" alt="Rooms" loading="lazy">
           </div>
           <div class="card-content">
               <h2 class="card-title">Stay with Us</h2>
@@ -123,7 +128,7 @@
       <!-- Dine Card -->
       <a href="dine.html" class="card">
           <div class="card-img">
-            <img src="assets/images/food.jpg" alt="Food">
+            <img src="assets/images/food.jpg" alt="Food" loading="lazy">
           </div>
           <div class="card-content">
               <h2 class="card-title">Dine Local</h2>
@@ -136,7 +141,7 @@
       <!-- Explore Card -->
       <a href="about.html" class="card">
           <div class="card-img">
-            <img src="assets/images/prague-church.jpg" alt="Attractions">
+            <img src="assets/images/prague-church.jpg" alt="Attractions" loading="lazy">
           </div>
           <div class="card-content">
               <h2 class="card-title">Explore </h2>
@@ -225,6 +230,7 @@
     <script src="js/nav-dropdown.js"></script>
     <script src="js/anti-scroll-dropdown.js"></script>
     <script src="js/scroll-fade.js"></script>
+    <script src="js/preloader.js"></script>
     <!-- End of Scripts -->
 </body>
 </html>

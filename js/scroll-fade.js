@@ -3,18 +3,19 @@ let elements = document.querySelectorAll('.animate-on-scroll');
 
 // Create an IntersectionObserver object to track when elements come into view
 let observer = new IntersectionObserver((entries) => {
-  // For each entry in the observer
   entries.forEach(entry => {
-    // If the entry is currently intersecting the viewport
     if(entry.isIntersecting) {
-      // Add the class "visible" to the target element
-      entry.target.classList.add('visible');
+      // Use requestAnimationFrame to add class in sync with browser's repaint
+      requestAnimationFrame(() => {
+        entry.target.classList.add('visible');
+      });
+      // Stop observing the element if it's already visible
+      observer.unobserve(entry.target);
     }
   });
-}, { threshold: 0.1 });
+}, { threshold: 0.5 }); // Increased threshold for less frequent, but earlier triggers
 
 // For each element in the selected elements
 elements.forEach(element => {
-  // Observe the element using the IntersectionObserver
   observer.observe(element);
 });
