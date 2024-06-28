@@ -1,26 +1,25 @@
-# IT1301 UX Design KRYJ
+# KRYJ Hotel
 
-A prototype of a hotel website.
+![Contributors](https://img.shields.io/badge/Contributors-Kriston%2C%20Joon%20Yin%2C%20Yu%20En%2C%20%26%20Rui%20Xuan-white)
+[![License](https://img.shields.io/badge/license-MIT-green.svg?style=round-square)](LICENSE)
 
 ## Context
 
-This project is a prototype for a hotel website. It is designed to provide a user-friendly interface for customers to browse hotel rooms, make reservations, and access other hotel services.
+This project is a prototype for a static hotel website. It is designed to provide a user-friendly interface for customers to browse hotel rooms, make reservations, and access other hotel services.
 
 ## File Directory
 
-```bash
+```plaintext
 IT1301-UX-Design-KRYJ
 ├── index.html
-├── "respective".html
+├── .html
 │ 
 ├── style
 │   ├── global.css
-│   └── "respective".css
+│   └── .css
 │ 
 ├── js
-│   ├── anti-scroll-dropdown.js
-│   ├── scroll-fade.js
-│   └── nav-dropdown.js
+│   ├── .js
 │ 
 ├── assets
 │   ├── images/..
@@ -30,54 +29,44 @@ IT1301-UX-Design-KRYJ
 └── README.md
 ```
 
-## Done By
+## Resources
 
-This project was worked on by Kriston, Joon Yin, Yu En, Rui Xuan.
-
-## Demo
-
-https://kr1s7on.github.io/IT1301-UX-Design-KRYJ/
-
-## Resources Taken From
-
-The resources for this project were taken from various sources including:
+The resources used in this project were taken from various sources including:
 
 - [Responsive Navbar](https://github.com/itzzmerov/responsive-navbar) by itzzmerov
 - [Infinite Scrolling Animations](https://github.com/constgenius/InfiniteScroll) by constgenius
-- [Icons8](https://icons8.com/) for Icons
-- [W3Schools](https://www.w3schools.com/) for Guides
+- [Icons8](https://icons8.com/) for icons.
+- [W3Schools](https://www.w3schools.com/) for guides.
+- [Checklist Design](https://www.checklist.design/) for reference.
 
-## Frameworks Used
+## Languages & Frameworks Used
 
-This project uses several frameworks to enhance the user experience and simplify development:
+This project utilizes a variety of languages and frameworks to enhance user experience and simplify development:
 
-- HTML, CSS, and JavaScript for the basic structure, styling, and functionality.
-- [Bootstrap](https://getbootstrap.com/) for responsive design and prebuilt components.
-- [jQuery](https://jquery.com/) for simplified JavaScript programming.
-- [Popper.js](https://popper.js.org/) for tooltips and popovers.
-- [Google Fonts](https://fonts.google.com/) for typography.
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+![Google Fonts](https://img.shields.io/badge/Google_Fonts-4285F4?style=for-the-badge&logo=google&logoColor=white)
 
-## Tools Used
+## Debugging Tools and Resources
 
-### Debugging
+AI and online articles helped with debugging.
 
-- GitHub Copilot
-- ChatGPT
-
-### Source Control
-
-- GitHub
+![GitHub Copilot](https://img.shields.io/badge/GitHub%20Copilot-2088FF?style=for-the-badge&logo=github&logoColor=white)
+![ChatGPT](https://img.shields.io/badge/ChatGPT-000000?style=for-the-badge&logo=OpenAI&logoColor=white)
+![W3Schools](https://img.shields.io/badge/W3Schools-007ACC?style=for-the-badge&logo=W3Schools&logoColor=white)
+![Stack Overflow](https://img.shields.io/badge/Stack%20Overflow-F58025?style=for-the-badge&logo=stack-overflow&logoColor=white)
 
 ## Misc
 
 ### Installation
 
 To install this project, clone the repository and open `index.html` in your browser.
+```bash
+git clone https://github.com/Kr1s7on/IT1301-UX-Design-KRYJ
+```
 
 ### Contributing
 
 Contributions are welcome. Please open an issue or submit a pull request.
-
-### License
-
-This project is licensed under the MIT License. See `LICENSE` for more information.
