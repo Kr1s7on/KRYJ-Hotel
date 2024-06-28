@@ -7,28 +7,6 @@
 
 This project is a prototype for a static hotel website. It is designed to provide a user-friendly interface for customers to browse hotel rooms, make reservations, and access other hotel services.
 
-## File Directory
-
-```plaintext
-IT1301-UX-Design-KRYJ
-├── index.html
-├── .html
-│ 
-├── style
-│   ├── global.css
-│   └── .css
-│ 
-├── js
-│   ├── .js
-│ 
-├── assets
-│   ├── images/..
-│   └── videos/..
-│
-├── LICENSE 
-└── README.md
-```
-
 ## Resources
 
 The resources used in this project were taken from various sources including:
@@ -65,6 +43,28 @@ AI and online articles helped with debugging.
 To install this project, clone the repository and open `index.html` in your browser.
 ```bash
 git clone https://github.com/Kr1s7on/IT1301-UX-Design-KRYJ
+```
+
+### File Directory
+
+```plaintext
+IT1301-UX-Design-KRYJ
+├── index.html
+├── .html
+│ 
+├── style
+│   ├── global.css
+│   └── .css
+│ 
+├── js
+│   ├── .js
+│ 
+├── assets
+│   ├── images/..
+│   └── videos/..
+│
+├── LICENSE 
+└── README.md
 ```
 
 ### Contributing
