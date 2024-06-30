@@ -13,18 +13,8 @@ This project is a prototype for a static hotel website. It is designed to provid
 |-------------|------------------------------------------------------|
 | Kriston     | Home, Contact Form, 404, About Us                    |
 | Joon Yin    | Rooms, Respective Room Pages, Booking Form           |
-| Yu En       | Facilities, Facilities Form, Nearby Attractions                          |
+| Yu En       | Facilities, Facilities Form, Nearby Attractions      |
 | Rui Xuan    | Dine, Restaurace KRYJ, The Terrace Café, Restaurant Form |
-
-## Resources
-
-The resources used in this project were taken from various sources including:
-
-- [Responsive Navbar](https://github.com/itzzmerov/responsive-navbar) by itzzmerov
-- [Infinite Scrolling Animations](https://github.com/constgenius/InfiniteScroll) by constgenius
-- [Icons8](https://icons8.com/) for icons.
-- [W3Schools](https://www.w3schools.com/) for guides.
-- [Checklist Design](https://www.checklist.design/) for reference.
 
 ## Languages & Frameworks Used
 
@@ -39,7 +29,7 @@ This project utilizes a variety of languages and frameworks to enhance user expe
 
 ## Debugging Tools and Resources
 
-Most of the resources we refrenced from are as shown below.
+Most of the resources we refrenced from are as shown below:
 
 ![GitHub Copilot](https://img.shields.io/badge/GitHub%20Copilot-FFFFFF?style=for-the-badge&logo=github&logoColor=24292E)![ChatGPT](https://img.shields.io/badge/ChatGPT-000000?style=for-the-badge&logo=OpenAI&logoColor=white)
 ![W3Schools](https://img.shields.io/badge/W3Schools-4C9A2A?style=for-the-badge&logo=W3Schools&logoColor=white)
