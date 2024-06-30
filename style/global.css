@@ -227,8 +227,6 @@ header {
     transition: 500ms;
 }
 
-.navbar .book-now-btn 
-
 .navbar .socials a #facebook {
     font-size: 1.5rem;
     color: rgb(0, 0, 0);
@@ -602,12 +600,12 @@ ul {
 	line-height: 40px;
 	border-radius: 50%;
 	color: #ffffff;
-	transition: all 0.5s ease;
+	transition: all 0.3s ease;
 }
 
 .footer-col .social-links a:hover {
 	background-color: rgb(165, 123, 18);
-    color: rgb(48, 36, 15);
+    color: rgb(0, 0, 0);
 }
 
 /* For mobile */
@@ -667,42 +665,5 @@ ul {
 .animate-on-scroll.visible {
     opacity: 1;
     transform: translateY(0);
-}
-
-/* Preloader */
-.preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
-
-.preloader > * { /* Style the preloader content */
-    animation: zoomInOut 1s infinite alternate;
-}
-
-/* Your website content styles */
-body {
-    opacity: 0; /* Initially hide website content */
-    transition: opacity 0.7s ease-in; /* Smooth fade-in animation */
-}
-
-body.visible {
-    opacity: 1; /* Website content becomes fully visible */
-}
-
-@keyframes zoomInOut {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.1);
-    }
 }
 /* End of Deco */

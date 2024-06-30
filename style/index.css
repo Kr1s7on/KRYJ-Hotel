@@ -196,3 +196,41 @@
     }
 }
 /* End of Content */
+
+/* Preloader */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.preloader > * { /* Style the preloader content */
+    animation: zoomInOut 1s infinite alternate;
+}
+
+/* Your website content styles */
+body {
+    opacity: 0; /* Initially hide website content */
+    transition: opacity 0.7s ease-in; /* Smooth fade-in animation */
+}
+
+body.visible {
+    opacity: 1; /* Website content becomes fully visible */
+}
+
+@keyframes zoomInOut {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+/* End of Preloader */
