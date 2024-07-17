@@ -11,7 +11,7 @@ This project is a prototype for a static hotel website. It is designed to provid
 
 | Contributor | Allocated Webpages                                   |
 |-------------|------------------------------------------------------|
-| Kriston     | Home, Contact Form, 404, About Us                    |
+| Kriston     | Home, Contact Form, 404, About Us, Footer Pages      |
 | Joon Yin    | Rooms, Respective Room Pages, Booking Form           |
 | Yu En       | Facilities, Facilities Form, Nearby Attractions      |
 | Rui Xuan    | Dine, Restaurace KRYJ, The Terrace Café, Restaurant Form |
@@ -29,7 +29,7 @@ This project utilizes a variety of languages and frameworks to enhance user expe
 
 ## Debugging Tools and Resources
 
-Most of the resources we refrenced from are as shown below:
+Most of the resources we referenced from are as shown below:
 
 ![GitHub Copilot](https://img.shields.io/badge/GitHub%20Copilot-FFFFFF?style=for-the-badge&logo=github&logoColor=24292E)![ChatGPT](https://img.shields.io/badge/ChatGPT-000000?style=for-the-badge&logo=OpenAI&logoColor=white)
 ![W3Schools](https://img.shields.io/badge/W3Schools-4C9A2A?style=for-the-badge&logo=W3Schools&logoColor=white)
@@ -44,6 +44,7 @@ Most of the resources we refrenced from are as shown below:
 ### Installation
 
 To install this project, clone the repository and open `index.html` in your browser.
+
 ```bash
 git clone https://github.com/Kr1s7on/IT1301-UX-Design-KRYJ
 ```

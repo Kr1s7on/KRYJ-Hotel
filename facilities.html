@@ -1,239 +1,396 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- === Author Information ==== -->
-        <!-- Code by Khng Yu En, 244705P -->
-        <!-- =========================== -->
-        <meta charset="UTF-8">
-        <!-- To set the Favicon of the website. -->
-        <link rel="icon" href="assets/images/logo/KRYJ.png" type="image/x-icon">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="KRYJ's Facilities, Spa, Pool, Gym, ">
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    <!-- End of Bootstrap CSS -->
-        <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100..900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
-        <!-- End of Google Fonts -->
-        <!-- Ajax -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- End of Ajax -->
-        <!-- Local CSS -->
-        <link rel="stylesheet" href="style/global.css">
-        <link rel="stylesheet" href="style/facilities.css">
-        <!-- End of Local CSS -->
-        <title>KRYJ - Experience</title>
-    </head>
+  <head>
+    <!-- === Author Information ==== -->
+    <!-- Code by Khng Yu En, 244705P -->
+    <!-- =========================== -->
+    <meta charset="UTF-8" />
+    <!-- To set the Favicon of the website. -->
+    <link rel="icon" href="assets/images/logo/KRYJ.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="KRYJ's Facilities, Spa, Pool, Gym, " />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- End of Bootstrap CSS -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End of Google Fonts -->
+    <!-- Ajax -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- End of Ajax -->
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="style/global.css" />
+    <link rel="stylesheet" href="style/facilities.css" />
+    <!-- End of Local CSS -->
+    <title>KRYJ - Experience</title>
+  </head>
 
-<body>
+  <body>
     <!-- Navigation Bar -->
     <header>
-        <div class="navbar">
-            <div class="logo">
-                <a href="index.html">
-                    .KRYJ.
-                </a>
-            </div>
-  
-            <ul class="links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="rooms.html">Rooms</a></li>
-                <li><a href="dine.html">Dine</a></li>
-                <li><a href="facilities.html" class="active">Facilities</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact-us.html">Contact</a></li>
-            </ul>
-  
-            <div class="book-now">
-              <button class="book-now-btn">
-                <a href="rooms-booking.html">Book Now</a>
-              </button>
-            </div>
-  
-            <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"> .KRYJ. </a>
         </div>
-  
-        <div class="dropdown_menu">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="rooms.html">Rooms</a></li>
-            <li><a href="dine.html">Dine</a></li>
-            <li><a href="facilities.html">Facilities</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact-us.html">Contact</a></li>
-  
-            <div class="socials">
-                <a href="https://www.facebook.com/Hotels.comUS/?locale=en_GB" target="_blank"><i class="fa-brands fa-facebook" id="facebook"></i></a>
-                <a href="https://twitter.com/hotelsdotcom?lang=en" target="_blank"><i class="fa-brands fa-x" id="x"></i></a>
-                <a href="https://www.instagram.com/hotelsdotcom/" target="_blank"><i class="fa-brands fa-instagram" id="instagram"></i></a>
-            </div>
+
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="dine.html">Dine</a></li>
+          <li><a href="facilities.html" class="active">Facilities</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact-us.html">Contact</a></li>
+        </ul>
+
+        <div class="book-now">
+          <button class="book-now-btn">
+            <a href="rooms-booking.html">Book Now</a>
+          </button>
         </div>
+
+        <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
+      </div>
+
+      <div class="dropdown_menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="dine.html">Dine</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact-us.html">Contact</a></li>
+
+        <div class="socials">
+          <a
+            href="https://www.facebook.com/Hotels.comUS/?locale=en_GB"
+            target="_blank"
+            ><i class="fa-brands fa-facebook" id="facebook"></i
+          ></a>
+          <a href="https://twitter.com/hotelsdotcom?lang=en" target="_blank"
+            ><i class="fa-brands fa-x" id="x"></i
+          ></a>
+          <a href="https://www.instagram.com/hotelsdotcom/" target="_blank"
+            ><i class="fa-brands fa-instagram" id="instagram"></i
+          ></a>
+        </div>
+      </div>
     </header>
     <!-- End of NavBar -->
 
     <!-- Home Video -->
     <div class="home-video">
-        <video src="assets/videos/facilities-page-video.mp4" autoplay muted loop playsinline></video>
-        <div class="home-video-content">
-          <h1><img src="https://readme-typing-svg.demolab.com?font=Lexend+Peta&size=36&duration=3000&pause=2000&center=true&vCenter=true&color=F7F7F7&random=false&width=170&lines=.KRYJ." alt="Typing SVG" /></h1>
-          <p></p>
-        </div>
+      <video
+        src="assets/videos/facilities-page-video.mp4"
+        autoplay
+        muted
+        loop
+        playsinline
+      ></video>
+      <div class="home-video-content">
+        <h1>
+          <img
+            src="https://readme-typing-svg.demolab.com?font=Lexend+Peta&size=36&duration=3000&pause=2000&center=true&vCenter=true&color=F7F7F7&random=false&width=170&lines=.KRYJ."
+            alt="Typing SVG"
+          />
+        </h1>
+        <p></p>
+      </div>
     </div>
     <a href="#facilities-header" class="down-btn">v</a>
     <!-- End of Home Video -->
 
     <!-- Introduction section -->
     <section class="container" id="facilities-header">
-        <h2>Experience</h2>
-        <p class="white-line"></p>
-        <!-- Introduction paragraph -->
-        <p id="facilities-about-para">Indulge in an unforgettable experience with our facilities, thoughtfully curated to ensure the utmost comfort of our guests. From our serene spa to our swimming pool and renowned restaurant, every detail is designed to exceed your expectations and elevate your experience.</p>
-        <a href="facilities-booking.html"><button class="book-now-btn">Make a Reservation</button></a>
+      <h2>Experience</h2>
+      <p class="white-line"></p>
+      <!-- Introduction paragraph -->
+      <p id="facilities-about-para">
+        Indulge in an unforgettable experience with our facilities, thoughtfully
+        curated to ensure the utmost comfort of our guests. From our serene spa
+        to our swimming pool and renowned restaurant, every detail is designed
+        to exceed your expectations and elevate your experience.
+      </p>
+      <a href="facilities-booking.html"
+        ><button class="book-now-btn">Make a Reservation</button></a
+      >
     </section>
 
     <!-- Content Cards -->
     <section class="card-container">
-        <!-- Lobby Card -->
-        <a href="#" class="card">
-            <div class="card-img">
-                <img src="assets/images/lobby.jpg" alt="Spa">
-            </div>
-            <div class="card-content">
-                <h2 class="card-title">Lounge</h2>
-                <p>Our lounge is the perfect place to unwind after a day of exploring or business meetings.</p>
-                <p>
-                    <img width="20" height="20" src="https://img.icons8.com/ios/50/wifi--v1.png" alt="wifi--v1"/>
-                    &nbsp;Wi-Fi
-                </p>
-                <p>
-                    <img width="20" height="20" src="https://img.icons8.com/ios/50/espresso-cup.png" alt="espresso-cup"/>
-                    &nbsp;Coffee & Tea
-                </p>
-                <p>
-                    <img width="20" height="20" src="https://img.icons8.com/ios/50/8-circle.png" alt="8-circle"/>
-                    &nbsp;Billiards Table
-                </p>
-            </div>
-        </a>
+      <!-- Lobby Card -->
+      <a href="#" class="card">
+        <div class="card-img">
+          <img src="assets/images/lobby.jpg" alt="Spa" />
+        </div>
+        <div class="card-content">
+          <h2 class="card-title">Lounge</h2>
+          <p>
+            Our lounge is the perfect place to unwind after a day of exploring
+            or business meetings.
+          </p>
+          <p>
+            <img
+              width="20"
+              height="20"
+              src="https://img.icons8.com/ios/50/wifi--v1.png"
+              alt="wifi--v1"
+            />
+            &nbsp;Wi-Fi
+          </p>
+          <p>
+            <img
+              width="20"
+              height="20"
+              src="https://img.icons8.com/ios/50/espresso-cup.png"
+              alt="espresso-cup"
+            />
+            &nbsp;Coffee & Tea
+          </p>
+          <p>
+            <img
+              width="20"
+              height="20"
+              src="https://img.icons8.com/ios/50/8-circle.png"
+              alt="8-circle"
+            />
+            &nbsp;Billiards Table
+          </p>
+        </div>
+      </a>
 
-        <!-- Gym Card -->
-        <a href="#" class="card">
-            <div class="card-img">
-                <img src="assets/images/dumbell.jpg" alt="Gym">
-            </div>
-            <div class="card-content">
-                <h2 class="card-title">Gym</h2>
-                <p>Our gym is equipped with the latest fitness equipment, providing you with everything you need for a full workout.</p>
-                <p>
-                    <img width="20" height="20" src="https://img.icons8.com/ios/50/dumbbell--v1.png" alt="dumbbell--v1"/>
-                    &nbsp;Free Weights
-                </p>
-                <p>
-                    <img width="20" height="20" src="https://img.icons8.com/ios/50/treadmill.png" alt="treadmill"/>
-                    &nbsp;Treadmills
-                </p>
-                <p>
-                    <img width="20" height="20" src="https://img.icons8.com/ios/50/clock--v1.png" alt="clock--v1"/>
-                    &nbsp;Available 24/7
-                </p>
-            </div>
-        </a>
+      <!-- Gym Card -->
+      <a href="#" class="card">
+        <div class="card-img">
+          <img src="assets/images/dumbell.jpg" alt="Gym" />
+        </div>
+        <div class="card-content">
+          <h2 class="card-title">Gym</h2>
+          <p>
+            Our gym is equipped with the latest fitness equipment, providing you
+            with everything you need for a full workout.
+          </p>
+          <p>
+            <img
+              width="20"
+              height="20"
+              src="https://img.icons8.com/ios/50/dumbbell--v1.png"
+              alt="dumbbell--v1"
+            />
+            &nbsp;Free Weights
+          </p>
+          <p>
+            <img
+              width="20"
+              height="20"
+              src="https://img.icons8.com/ios/50/treadmill.png"
+              alt="treadmill"
+            />
+            &nbsp;Treadmills
+          </p>
+          <p>
+            <img
+              width="20"
+              height="20"
+              src="https://img.icons8.com/ios/50/clock--v1.png"
+              alt="clock--v1"
+            />
+            &nbsp;Available 24/7
+          </p>
+        </div>
+      </a>
 
-        <!-- Pool Card -->
-        <a href="#" class="card">
-            <div class="card-img">
-                <img src="assets/images/pool.jpg" alt="Pool">
-            </div>
-            <div class="card-content">
-                <h2 class="card-title">Swimming Pool</h2>
-                <p>Enjoy a refreshing dip in our swimming pool and soak up the sun on our comfortable lounge chairs.</p>
-                <p>
-                    <img width="20" height="20" src="https://img.icons8.com/ios/50/swimming-pool.png" alt="swimming-pool"/>
-                    &nbsp;Heated Pool
-                </p>
-                <p>
-                    <img width="20" height="20" src="https://img.icons8.com/ios/50/relax-with-book.png" alt="relax-with-book"/>
-                    &nbsp;Lounge Chairs
-                </p>
-                <p>
-                    <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/poolside-bar.png" alt="poolside-bar"/>
-                    &nbsp;Poolside Bar
-                </p>
-            </div>
-        </a>
+      <!-- Pool Card -->
+      <a href="#" class="card">
+        <div class="card-img">
+          <img src="assets/images/pool.jpg" alt="Pool" />
+        </div>
+        <div class="card-content">
+          <h2 class="card-title">Swimming Pool</h2>
+          <p>
+            Enjoy a refreshing dip in our swimming pool and soak up the sun on
+            our comfortable lounge chairs.
+          </p>
+          <p>
+            <img
+              width="20"
+              height="20"
+              src="https://img.icons8.com/ios/50/swimming-pool.png"
+              alt="swimming-pool"
+            />
+            &nbsp;Heated Pool
+          </p>
+          <p>
+            <img
+              width="20"
+              height="20"
+              src="https://img.icons8.com/ios/50/relax-with-book.png"
+              alt="relax-with-book"
+            />
+            &nbsp;Lounge Chairs
+          </p>
+          <p>
+            <img
+              width="20"
+              height="20"
+              src="https://img.icons8.com/ios-filled/50/poolside-bar.png"
+              alt="poolside-bar"
+            />
+            &nbsp;Poolside Bar
+          </p>
+        </div>
+      </a>
     </section>
 
     <section class="card-container">
-        <!-- Spa Card -->
-        <a href="#" class="card">
-            <div class="card-img">
-              <img src="assets/images/facemask.jpg" alt="Spa">
-            </div>
-            <div class="card-content">
-                <h2 class="card-title">Spa</h2>
-                <p>Relax at our lavish spa with treatments crafted to dissolve stress, leaving you refreshed and revitalized.</p>
-                <p>
-                    <img width="20" height="20" src="https://img.icons8.com/ios/50/dumbbell--v1.png" alt="dumbbell--v1"/>
-                    &nbsp;Massage Tables
-                </p>
-                <p>
-                    <img width="20" height="20" src="https://img.icons8.com/ios/50/oil-massage.png" alt="oil-massage"/>
-                    &nbsp;Oil Massage
-                </p>
-                <p>
-                    <img width="20" height="20" src="https://img.icons8.com/ios/50/facemask.png" alt="facemask"/>
-                    &nbsp;Face Masks
-            </div>
-        </a>
-  
-        <!-- Dine Card -->
-        <a href="#" class="card">
-            <div class="card-img">
-              <img src="assets/images/chefplating.jpg" alt="Food">
-            </div>
-            <div class="card-content">
-                <h2 class="card-title">Dine</h2>
-                <p>Savor local & international cuisine in our restaurant, or enjoy pastries, sandwiches & beverages at the Terrace Café.</p>
-                <p>
-                    <img width="20" height="20" src="https://img.icons8.com/ios/50/tableware.png" alt="tableware"/>
-                    &nbsp;Breakfast Buffet
-                </p>
-                <p>
-                    <img width="20" height="20" src="https://img.icons8.com/ios/50/waiter.png" alt="waiter"/>
-                    &nbsp;Restaurace KRYJ
-                </p>
-                <p>
-                    <img width="20" height="20" src="https://img.icons8.com/ios/50/cafe.png" alt="cafe"/>
-                    &nbsp;The Terrace Café
-                </p>
-            </div>
-        </a>
-  
-        <!-- Meeting Rooms Card -->
-        <a href="#" class="card">
-            <div class="card-img">
-              <img src="assets/images/meeting.jpg" alt="Meeting">
-            </div>
-            <div class="card-content">
-                <h2 class="card-title">Meeting Rooms</h2>
-                <p>Host corporate meetings, blending modern amenities with a professional ambiance for comfort and functionality.</p>
-                <p>
-                    <img width="20" height="20" src="https://img.icons8.com/ios/50/office-chair-2.png" alt="office-chair-2"/>
-                    &nbsp;Office Chairs
-                </p>
-                <p>
-                    <img width="20" height="20" src="https://img.icons8.com/ios/50/video-projector.png" alt="video-projector"/>
-                    &nbsp;Projector
-                </p>
-                <p>
-                    <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/conference-foreground-selected.png" alt="conference-foreground-selected"/>
-                    &nbsp;Up to 15 People
-                </p>
-            </div>
-        </a>
+      <!-- Spa Card -->
+      <a href="#" class="card">
+        <div class="card-img">
+          <img src="assets/images/facemask.jpg" alt="Spa" />
+        </div>
+        <div class="card-content">
+          <h2 class="card-title">Spa</h2>
+          <p>
+            Relax at our lavish spa with treatments crafted to dissolve stress,
+            leaving you refreshed and revitalized.
+          </p>
+          <p>
+            <img
+              width="20"
+              height="20"
+              src="https://img.icons8.com/ios/50/dumbbell--v1.png"
+              alt="dumbbell--v1"
+            />
+            &nbsp;Massage Tables
+          </p>
+          <p>
+            <img
+              width="20"
+              height="20"
+              src="https://img.icons8.com/ios/50/oil-massage.png"
+              alt="oil-massage"
+            />
+            &nbsp;Oil Massage
+          </p>
+          <p>
+            <img
+              width="20"
+              height="20"
+              src="https://img.icons8.com/ios/50/facemask.png"
+              alt="facemask"
+            />
+            &nbsp;Face Masks
+          </p>
+        </div>
+      </a>
+
+      <!-- Dine Card -->
+      <a href="#" class="card">
+        <div class="card-img">
+          <img src="assets/images/chefplating.jpg" alt="Food" />
+        </div>
+        <div class="card-content">
+          <h2 class="card-title">Dine</h2>
+          <p>
+            Savor local & international cuisine in our restaurant, or enjoy
+            pastries, sandwiches & beverages at the Terrace Café.
+          </p>
+          <p>
+            <img
+              width="20"
+              height="20"
+              src="https://img.icons8.com/ios/50/tableware.png"
+              alt="tableware"
+            />
+            &nbsp;Breakfast Buffet
+          </p>
+          <p>
+            <img
+              width="20"
+              height="20"
+              src="https://img.icons8.com/ios/50/waiter.png"
+              alt="waiter"
+            />
+            &nbsp;Restaurace KRYJ
+          </p>
+          <p>
+            <img
+              width="20"
+              height="20"
+              src="https://img.icons8.com/ios/50/cafe.png"
+              alt="cafe"
+            />
+            &nbsp;The Terrace Café
+          </p>
+        </div>
+      </a>
+
+      <!-- Meeting Rooms Card -->
+      <a href="#" class="card">
+        <div class="card-img">
+          <img src="assets/images/meeting.jpg" alt="Meeting" />
+        </div>
+        <div class="card-content">
+          <h2 class="card-title">Meeting Rooms</h2>
+          <p>
+            Host corporate meetings, blending modern amenities with a
+            professional ambiance for comfort and functionality.
+          </p>
+          <p>
+            <img
+              width="20"
+              height="20"
+              src="https://img.icons8.com/ios/50/office-chair-2.png"
+              alt="office-chair-2"
+            />
+            &nbsp;Office Chairs
+          </p>
+          <p>
+            <img
+              width="20"
+              height="20"
+              src="https://img.icons8.com/ios/50/video-projector.png"
+              alt="video-projector"
+            />
+            &nbsp;Projector
+          </p>
+          <p>
+            <img
+              width="20"
+              height="20"
+              src="https://img.icons8.com/ios-filled/50/conference-foreground-selected.png"
+              alt="conference-foreground-selected"
+            />
+            &nbsp;Up to 15 People
+          </p>
+        </div>
+      </a>
     </section>
     <!-- End of Content Cards -->
 
@@ -245,12 +402,19 @@
     <div class="newsletter-container">
       <h2>Sign up for our Newsletter</h2>
       <p class="white-line"></p>
-      <p class="newsletter-p">Stay updated with our latest news, events, and special offers.</p>
-      <form action="mailto:kryj.cz@gmail.com" method="post" enctype="text/plain">
-          <input type="email" id="newsletter-email" name="newsletter-email" placeholder="Your email address">
-          <button type="submit">Sign Up</button>
+      <p class="newsletter-p">
+        Stay updated with our latest news, events, and special offers.
+      </p>
+      <form id="newsletter-form">
+        <input
+          type="email"
+          id="newsletter-email"
+          name="newsletter-email"
+          placeholder="Your email address"
+        />
+        <button type="submit">Sign Up</button>
       </form>
-      <br>
+      <br />
     </div>
     <!-- End of Newsletter Signup -->
 
@@ -261,20 +425,20 @@
           <div class="footer-col">
             <h4>.KRYJ.</h4>
             <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="dine.html">dine</a></li>
-                <li><a href="about.html">about</a></li>
-                <li><a href="contact-us.html">contact us</a></li>
+              <li><a href="index.html">home</a></li>
+              <li><a href="dine.html">dine</a></li>
+              <li><a href="about.html">about</a></li>
+              <li><a href="contact-us.html">contact us</a></li>
             </ul>
           </div>
 
           <div class="footer-col">
             <h4>General Info</h4>
             <ul>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="refunds.html">refunds</a></li>
-                <li><a href="payment-options.html">payment options</a></li>
-                <li><a href="privacy-policy.html">privacy policy</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="faq.html">refunds</a></li>
+              <li><a href="faq.html">payment options</a></li>
+              <li><a href="privacy-policy.html">privacy policy</a></li>
             </ul>
           </div>
 
@@ -291,9 +455,15 @@
           <div class="footer-col">
             <h4>follow us</h4>
             <div class="social-links">
-              <a href="https://www.facebook.com/Hotels.comUS/?locale=en_GB"><i class="fab fa-facebook-f"></i></a>
-              <a href="https://twitter.com/hotelsdotcom?lang=en"><i class="fab fa-x"></i></a>
-              <a href="https://www.instagram.com/hotelsdotcom/"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.facebook.com/Hotels.comUS/?locale=en_GB"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://twitter.com/hotelsdotcom?lang=en"
+                ><i class="fab fa-x"></i
+              ></a>
+              <a href="https://www.instagram.com/hotelsdotcom/"
+                ><i class="fab fa-instagram"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -311,14 +481,26 @@
 
     <!-- jQuery, Popper.js, and Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
     <!-- Local Scripts -->
     <script src="js/nav-dropdown.js"></script>
     <script src="js/scroll-fade.js"></script>
     <script src="js/anti-scroll-dropdown.js"></script>
-    <script src="js/preloader.js"></script>
+    <script src="js/newsletter-signup.js"></script>
     <!-- End of Scripts -->
-</body>
+  </body>
 </html>

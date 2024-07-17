@@ -37,6 +37,7 @@
     margin-bottom: 25px;
     font-size: 18px;
 }
+
 /* End of About */
 
 /* Styles for Container */
@@ -69,7 +70,8 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the 0.5 to change the darkness of the filter */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust the 0.5 to change the darkness of the filter */
     z-index: 1;
 }
 
@@ -85,10 +87,11 @@
     margin-top: 50px;
     color: white;
 }
+
 /* End of images section */
 
 /* Styles for Room Cards */
-.room-card{
+.room-card {
     width: 30%;
     padding: 0px;
     border-radius: 5px;
@@ -98,7 +101,7 @@
     justify-content: space-between;
 }
 
-.room-card p{
+.room-card p {
     padding: 20px;
     flex-grow: 1;
     line-height: 25px;
@@ -179,7 +182,8 @@
     width: 100%;
 }
 
-.card-content h2, .card-content p {
+.card-content h2,
+.card-content p {
     margin: 0;
     padding: 0;
     padding-bottom: 10px;
@@ -222,7 +226,8 @@
 
 @media (max-width: 768px) {
     #home-review-section-p {
-        /* background-attachment: scroll; */ /* Enable if actually deployed */
+        /* background-attachment: scroll; */
+        /* Enable if actually deployed */
         height: 100vh;
         padding-top: 30px;
     }
@@ -231,4 +236,5 @@
         padding-top: 30px;
     }
 }
+
 /* End of Room Cards */
