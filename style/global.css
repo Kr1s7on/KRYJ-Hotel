@@ -410,6 +410,12 @@ body.no-scroll {
 /* End of Media Queries */
 /* End of Navbar */
 
+/* FAQ Dropdown */
+.faq-dropdown {
+    transition: 0.5s;
+}
+/* End of FAQ Dropdown */
+
 /* Newsletter */
 .newsletter-container {
     width: 100%;
