@@ -14,7 +14,7 @@ const socialIcons = document.querySelectorAll('.socials i');
 const tooltip = document.getElementById('tooltip');
 
 // Add a click event listener to the toggle button
-toggleBtn.onclick = function() {
+toggleBtn.onclick = function () {
     // Toggle the 'open' class on the dropdown menu
     dropDownMenu.classList.toggle('open');
 

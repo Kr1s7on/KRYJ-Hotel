@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     // This code waits for the document to finish loading before executing the following code.
 
     $('.toggle_btn').on('click', function () {

@@ -26,7 +26,6 @@ This project utilizes a variety of languages and frameworks to enhance user expe
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![Google Fonts](https://img.shields.io/badge/Google_Fonts-4285F4?style=for-the-badge&logo=google&logoColor=white)
 
-
 ## Debugging Tools and Resources
 
 Most of the resources we referenced from are as shown below:

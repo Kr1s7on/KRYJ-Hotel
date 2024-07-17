@@ -4,7 +4,7 @@ let elements = document.querySelectorAll('.animate-on-scroll');
 // Create an IntersectionObserver object to track when elements come into view
 let observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
-    if(entry.isIntersecting) {
+    if (entry.isIntersecting) {
       // Use requestAnimationFrame to add class in sync with browser's repaint
       requestAnimationFrame(() => {
         entry.target.classList.add('visible');

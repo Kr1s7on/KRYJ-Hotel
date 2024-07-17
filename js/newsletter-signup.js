@@ -1,4 +1,4 @@
-document.getElementById('newsletter-form').addEventListener('submit', function(event) {
+document.getElementById('newsletter-form').addEventListener('submit', function (event) {
     // Prevent the default form submission
     event.preventDefault();
     // Get the email from the input
