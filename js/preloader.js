@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const websiteContent = document.body;
   
     // Trigger fade-out animation for preloader
-    preloader.classList.add('fade-out'); // Use 'fade-out' instead of 'hidden'
+    preloader.classList.add('fade-out');
     websiteContent.classList.add('visible'); // Start website fade-in
   
     // Wait for the fade-out animation to complete before removing preloader
@@ -11,5 +11,5 @@ window.addEventListener('DOMContentLoaded', () => {
       if (preloader.parentNode) {
         preloader.parentNode.removeChild(preloader);
       }
-    }, 2000); // Adjust this delay to match the duration of the fade-out animation
+    }, 2000); // Delay to match the duration of the fade-out animation
 });
