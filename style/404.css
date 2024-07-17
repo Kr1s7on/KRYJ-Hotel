@@ -1,0 +1,62 @@
+body {
+    background-image: url(../assets/images/patern.png);
+}
+
+.error-container {
+    text-align: center;
+    font-weight: 300;
+    color: #252932;
+    width: 80%;
+    margin: auto;
+    padding: 100px;
+    background-color: rgba(255, 255, 255, 0.89);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.error-container h1 {
+    font-size: 4em;
+    font-family: 'Lexend Peta', cursive;
+    margin: 0;
+    font-weight: 300;
+    color: rgb(165, 123, 18);
+}
+
+.error-container h2 {
+    color: rgb(165, 123, 18);
+    font-size: 22px;
+}
+
+.error-container p {
+    margin: 0;
+    padding-top: 30px;
+}
+
+.error-container a {
+    color: black;
+    text-decoration: underline;
+    font-weight: 500;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.error-container a:hover {
+    color: rgb(165, 123, 18);
+}
+
+@media screen and (max-width: 800px) {
+    .error-container {
+        padding: 50px;
+    }
+
+    .error-container h1 {
+        font-size: 3em;
+    }
+
+    .error-container h2 {
+        font-size: 18px;
+    }
+
+}
