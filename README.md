@@ -12,7 +12,7 @@ This project is a prototype for a static hotel website. It is designed to provid
 | Contributor | Allocated Webpages                                   |
 |-------------|------------------------------------------------------|
 | Kriston     | Home, Contact Form, 404, About Us, Footer Pages, Preloader |
-| Joon Yin    | Rooms, Respective Room Pages, Booking Form           |
+| Joon Yin    | Rooms, Room Pages, Booking Form           |
 | Yu En       | Facilities, Facilities Form, Nearby Attractions      |
 | Rui Xuan    | Dine, Restaurace KRYJ, The Terrace Café, Restaurant Form   |
 
