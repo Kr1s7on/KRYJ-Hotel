@@ -13,7 +13,7 @@ let observer = new IntersectionObserver((entries) => {
       observer.unobserve(entry.target);
     }
   });
-}, { threshold: 0.5 }); // Increased threshold for less frequent, but earlier triggers
+}, { threshold: 0.1}); // Increased threshold for less frequent, but earlier triggers
 
 // For each element in the selected elements
 elements.forEach(element => {
