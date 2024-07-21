@@ -1,6 +1,7 @@
 #about-section {
     text-align: center;
     padding-top: 100px;
+    padding-bottom: 30px;
 }
 
 #about-section h2 {
@@ -22,8 +23,33 @@
     position: relative;
 }
 
-.main-timeline-2 {
-    
+.card {
+    text-decoration: none;
+    color: black;
+    border: rgb(219, 219, 219) 1px solid;
+    transition: 0.9s;
+    overflow: hidden;
+    /* Add this line */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    flex: 1 0 15%;
+    box-sizing: border-box;
+    margin: 0 1%;
+}
+
+.raised {
+    margin-top: -200px;
+    /* Adjust this value to control how much higher the cards are moved */
+}
+
+.card h4 {
+    font-family: 'Lexend Peta', cursive;
+    font-weight: 300;
+    color: rgb(165, 123, 18);
+}
+
+#bg-p {
+    /* background-image: url(../assets/images/patern.png); */
 }
 
 /* The actual timeline (the vertical ruler) */
