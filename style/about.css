@@ -53,6 +53,9 @@
 
 #bg-p {
     background-image: url(../assets/images/patern.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* The actual timeline (the vertical ruler) */

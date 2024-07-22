@@ -414,6 +414,7 @@ body.no-scroll {
 .faq-dropdown {
     transition: 0.5s;
 }
+
 /* End of FAQ Dropdown */
 
 /* Newsletter */
@@ -708,6 +709,18 @@ ul {
 .animate-on-scroll.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Back to Top Button */
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: rgb(165, 123, 18);
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    z-index: 10000;
 }
 
 /* End of Deco */

@@ -68,6 +68,13 @@
     color: white;
 }
 
+#hrs-1 {
+    background-image: url(../assets/images/dine/res.jpg);
+}
+
+#hrs-2 {
+    background-image: url(../assets/images/dine/cafe.jpg);
+}
 /* End of images section */
 
 /* Review*/
