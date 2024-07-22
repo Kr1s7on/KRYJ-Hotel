@@ -72,4 +72,4 @@ IT1301-UX-Design-KRYJ
 
 ### Contributing
 
-Contributions are welcome. Please open an issue or submit a pull request.
+Feel free to fork for personal use and experimentation. We're not seeking contributions but value your interest!
