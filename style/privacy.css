@@ -14,6 +14,10 @@ body {
     margin-bottom: 50px;
 }
 
+.privacy-container header {
+    z-index: 1;
+}
+
 .privacy-title {
     font-size: 30px;
     font-family: "Lexend Peta", sans-serif;
@@ -31,6 +35,7 @@ body {
 
 .privacy-text {
     line-height: 1.5;
+    z-index: 1;
 }
 
 a.privacy-link {

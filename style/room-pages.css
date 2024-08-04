@@ -1,0 +1,339 @@
+/* Images section, CSS adapted from index.css*/
+.home-review-section {
+    text-align: center;
+    transition: opacity 1s, transform 1s;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.home-review-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust the 0.5 to change the darkness of the filter */
+    z-index: 1;
+}
+
+.home-review-section * {
+    position: relative;
+    z-index: 2;
+}
+
+.home-review-section h2 {
+    font-family: 'Lexend Peta', cursive;
+    font-weight: 300;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    color: white;
+}
+
+/* End of images section */
+
+/* Styles for Room Cards */
+.room-card {
+    width: 30%;
+    padding: 0px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.room-card p {
+    padding: 20px;
+    flex-grow: 1;
+    line-height: 25px;
+}
+
+.card-container .card:hover {
+    color: black;
+}
+
+.room-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 7px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 55px;
+}
+
+.card {
+    text-decoration: none;
+    color: black;
+    border: rgb(219, 219, 219) 1px solid;
+    transition: 0.9s;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    flex: 1 0 15%;
+    box-sizing: border-box;
+    margin: 0 1%;
+}
+
+#cc-title {
+    font-family: 'Lexend Peta', cursive;
+    font-weight: 300;
+    color: rgb(165, 123, 18);
+    text-align: center;
+    padding-top: 110px;
+    margin-bottom: 15px;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+    height: 400px;
+    overflow: hidden;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .9s;
+}
+
+.card:hover .card-img img {
+    transform: scale(1.1);
+    filter: saturate(1.3);
+}
+
+.card-content {
+    padding: 15px 25px 25px 25px;
+}
+
+.card-title {
+    font-family: 'Lexend Peta', cursive;
+    font-weight: 300;
+    margin-bottom: 10px;
+    color: rgb(165, 123, 18);
+    font-size: 25px;
+}
+
+.card-container #home-about-section {
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+.card-content h2,
+.card-content p {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+}
+
+.card-content button {
+    margin-top: 13px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(165, 123, 18);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.6s;
+}
+
+.card-content button:hover {
+    background-color: rgb(151, 98, 0);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+#home-about-section-p {
+    text-align: center;
+    padding-top: 5px;
+}
+
+#home-about-section-p h2 {
+    font-family: 'Lexend Peta', cursive;
+    font-weight: 300;
+    margin-bottom: 15px;
+    color: rgb(165, 123, 18);
+}
+
+.spacer-sm {
+    padding-top: 20px;
+}
+
+/* Media Tags for Mobile Responsiveness */
+@media (max-width: 800px) {
+    .card-container {
+        flex-direction: column;
+        padding-bottom: 0px;
+    }
+
+    .card {
+        margin-bottom: 50px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    #home-review-section-p {
+        /* background-attachment: scroll; */
+        /* Enable if actually deployed */
+        height: 100vh;
+        padding-top: 30px;
+    }
+
+    #home-about-section-p {
+        padding-top: 30px;
+    }
+}
+
+/* End of Room Cards */
+
+.room-section h2 {
+    font-family: 'Lexend Peta', cursive;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: rgb(165, 123, 18);
+}
+
+.room-section {
+    text-align: center;
+}
+
+.room-section .info-txt {
+    padding-top: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+#features {
+    padding: 150px 20px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+#features h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: rgb(165, 123, 18);
+    font-family: "Lexend Peta", cursive;
+    font-weight: 300;
+}
+
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+    padding-top: 30px;
+}
+
+.feature {
+    flex: 1 1 200px;
+    max-width: 200px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.feature img {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .feature {
+        flex: 1 1 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .feature {
+        flex: 1 1 100%;
+    }
+}
+
+.color-bg {
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#gallery h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: rgb(165, 123, 18);
+    font-family: "Lexend Peta", cursive;
+    font-weight: 300;
+    text-align: center;
+}
+
+.home-image .bg-pic {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+    top: 0;
+    margin-top: -100px;
+}
+
+/* Captions */
+.home-image-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.home-image-content a {
+    color: white;
+    font-size: 3rem;
+    border: none;
+}
+
+.home-image-content h1 a {
+    color: white;
+    font-size: 3rem;
+    border: none;
+
+}
+
+.home-image-content a:hover {
+    cursor: pointer;
+}
+
+.home-image-content span {
+    font-family: 'Lexend Peta', cursive;
+}
+
+.custom-card-spacing {
+    margin-bottom: 30px; /* Adjust the value as needed */
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%; /* Ensure the image does not exceed the column width */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+}

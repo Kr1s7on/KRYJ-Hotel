@@ -1,3 +1,5 @@
+// by: Kriston
+
 $(document).ready(function () {
     // This code waits for the document to finish loading before executing the following code.
 

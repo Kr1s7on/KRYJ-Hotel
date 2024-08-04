@@ -1,3 +1,5 @@
+// by: Kriston
+
 window.addEventListener('DOMContentLoaded', () => {
   const preloader = document.querySelector('.preloader');
   const websiteContent = document.body;

@@ -1,0 +1,411 @@
+body {
+    background-image: url(../assets/images/patern.png);
+}
+
+.form-section,
+.form-section-2 {
+    width: 40%;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.form-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    margin-right: 50px;
+
+}
+
+section .container-left {
+    width: 50%;
+    margin-left: 150px;
+
+}
+
+.form-section-2 {
+    width: 90%;
+}
+
+section .container-right {
+    width: 30%;
+    height: 130vh;
+    margin-right: 130px;
+}
+
+
+.hidden {
+    display: none;
+}
+
+#form-book-your-room,
+#guestinfo,
+#payment-gatement,
+#booking-detail {
+    text-align: center;
+    color: rgb(165, 123, 18);
+    margin-bottom: 15px;
+    font-family: 'Lexend Peta', cursive;
+    font-weight: 300;
+    font-size: 28px;
+}
+
+#guestinfo {
+    margin-bottom: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: black;
+    font-size: 16px;
+}
+
+.guestinfo-field {
+    width: 100%;
+}
+
+input[type="date"] {
+    width: 50%;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="number"],
+select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 0.1px solid #ffffff;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus {
+    outline-color: rgb(165, 123, 18);
+}
+
+.guestinfo-field {
+    width: 45%;
+}
+
+input[type="submit"] {
+    margin-top: 13px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(165, 123, 18);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.6s;
+}
+
+.rm-btn {
+    width: 40%;
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: none;
+    border-radius:   4px;
+    background-color: rgb(165, 123, 18);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.6s;
+}
+
+.card-holders {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+    padding-bottom: 5px;
+}
+
+.rm-btn:hover {
+    background-color: rgb(151, 98, 0);
+    color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-exp-date {
+    display: flex;
+    gap: 10px;
+}
+
+#go-back {
+    font-family: 'Urbanist', sans-serif;
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+    display: flex;
+    padding-top: 10px;
+    margin-top: 0px;
+
+}
+
+#go-back:hover {
+    text-decoration: none;
+    color: rgb(151, 98, 0);
+}
+
+#go-back:before {
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    background-color: rgb(134, 87, 0);
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+    transform: translateX(-50%);
+}
+
+
+#accepted-card {
+    width: 400px;
+    height: auto;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.top-field {
+    display: flex;
+    justify-content: space-between;
+}
+
+@-webkit-keyframes autofill {
+    to {
+        color: inherit;
+        background: transparent;
+    }
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+}
+
+#guestinfo {
+    margin-right: 160px;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.checkBox #agreePolicy,
+.checkBox #agreePolicy-text {
+    margin-top: 30px;
+
+}
+
+.input-field label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: black;
+    pointer-events: none;
+    transition: .3s;
+}
+
+.input-field input {
+    background-color: white;
+    width: 70%;
+}
+
+.input-field input:focus,
+.input-field input:valid {
+    background-color: white;
+}
+
+.input-field input:focus {
+    outline: none;
+    border: 2px solid rgb(165, 123, 18);
+}
+
+
+.input-field.error input {
+    border-color: red;
+}
+
+.input-field .error {
+    color: red;
+    font-size: 14px;
+    padding-left: 10px;
+    position: absolute;
+    bottom: -20px;
+
+
+}
+
+.input-field input:focus~label,
+.input-field input:valid~label {
+    top: 0;
+    font-size: 16px;
+    padding: 0 10px;
+    color: rgb(165, 123, 18);
+    background: white;
+}
+
+
+.booking-details-card {
+    position: sticky;
+    top: 130px;
+    width: 100%;
+    /* padding: 20px; */
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+}
+
+#type-of-room-choosen {
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    border-top-left-radius: 10px;
+    /* Set the top left corner radius */
+    border-top-right-radius: 10px;
+    /* Set the top right corner radius */
+    margin-bottom: 20px;
+}
+
+#roomtype {
+    font-family: 'Lexend Peta', serif;
+    font-weight: 300;
+    margin: 5px 0;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    color: rgb(165, 123, 18);
+}
+
+.booking-details-card p {
+    font-size: 18px;
+    margin: 5px 0;
+    padding-left: 20px;
+    padding-bottom: 3px;
+}
+
+.booking-card-hr {
+    width: 80%;
+    height: 2px;
+    background-color: rgb(165, 123, 18);
+    margin: 10px 20px;
+    padding: 0;
+}
+
+.price-display {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0px;
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+.price-display p {
+    font-size: 18px;
+    margin: 5px 0;
+    padding-bottom: 3px;
+}
+
+.price {
+    padding-right: 80px;
+}
+
+/* Mobile Responsiveness  */
+@media (max-width: 768px) {
+    .hidden {
+        display: none !important;
+    }
+
+    input[type="date"] {
+        width: 100%;
+    }
+
+    .rm-btn {
+        width: 70%;
+    }
+
+    .form-section,
+    .form-section-2 {
+        width: 80%;
+    }
+
+    section .container-left {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    section .container-right {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .form-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .top-field {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .guestinfo-field {
+        width: 100%;
+    }
+
+    #accepted-card {
+        width: 80%;
+    }
+
+    #guestinfo {
+        margin-right: 0px;
+    }
+
+    #go-back {
+        margin-right: 0px;
+    }
+
+    .booking-details-card {
+        width: 100%;
+    }
+
+    #type-of-room-choosen {
+        width: 100%;
+    }
+
+    #roomtype {
+        padding-left: 20px;
+    }
+
+    .price-display {
+        padding: 0 0px;
+    }
+
+    .price {
+        padding-right: 10px;
+    }
+}

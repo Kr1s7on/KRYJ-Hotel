@@ -1,3 +1,6 @@
+// by: Kriston
+// taken from MDBootstrap
+
 //Get the button
 let mybutton = document.getElementById("btn-back-to-top");
 
@@ -19,6 +22,7 @@ function scrollFunction() {
 // When the user clicks on the button, scroll to the top of the document
 mybutton.addEventListener("click", backToTop);
 
+// Function to scroll to the top
 function backToTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;

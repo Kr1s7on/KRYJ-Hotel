@@ -720,7 +720,31 @@ ul {
     background-color: rgb(165, 123, 18);
     border: none;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    z-index: 10000;
+    z-index: 999;
+}
+
+/* Accordion Styles */
+.accordion-button:focus,
+.accordion-button:not(.collapsed) {
+    color: rgb(165, 123, 18);
+}
+
+.accordion-button::after {
+    color: rgb(165, 123, 18);
+}
+
+.accordion h2 {
+    font-family: 'Lexend Peta', cursive;
+    font-weight: 300;
+    margin-bottom: 15px;
+    color: rgb(165, 123, 18);
+    text-align: center;
+}
+
+.accordion-spacer {
+    padding-top: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 /* End of Deco */

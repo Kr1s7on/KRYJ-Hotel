@@ -1,3 +1,6 @@
+// by: Kriston
+// taken from Github by itzzmerov
+
 // Select the toggle button element
 const toggleBtn = document.querySelector('.toggle_btn');
 

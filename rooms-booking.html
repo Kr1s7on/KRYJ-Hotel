@@ -32,8 +32,9 @@
   <!-- Local CSS -->
   <link rel="stylesheet" href="style/global.css" />
   <link rel="stylesheet" href="style/rooms.css" />
+  <link rel="stylesheet" href="style/rooms-booking.css">
   <!-- End of Local CSS -->
-  <title>KRYJ - Stay</title>
+  <title>KRYJ - Bookings</title>
 </head>
 
 <body>
@@ -81,7 +82,194 @@
   </header>
   <!-- End of Navigation Bar -->
 
-  <!-- Form to be placed here, in progress -->
+  <!-- Rooms Booking Form -->
+  <main>
+    <section class="form-section">
+      <!-- Booking Form -->
+      <form class="bookingForm">
+        <h2 id="form-book-your-room">Book a Room</h2>
+
+        <!-- Check-in Date -->
+        <label for="Adate">Check-in Date:<span class="astk">*</span></label>
+        <input type="date" id="Adate" name="Adate" required><br>
+
+        <!-- Check-out Date -->
+        <label for="Edate">Check-out Date:<span class="astk">*</span></label>
+        <input type="date" id="Edate" name="Edate" required><br>
+
+        <!-- Choice of Room -->
+        <label for="room">Preferred room<span class="astk">*</span></label>
+        <select name="room" id="room" required>
+          <option value="FR">Family Room</option>
+          <option value="Droom">Duplex Room</option>
+          <option value="DeluxeRoom">Deluxe Room</option>
+          <option value="RS">Renaissance Suite</option>
+          <option value="PS">Presidential Suite</option>
+        </select>
+
+        <button class="rm-btn" type="submit" id="checkAvailable">Proceed</button>
+      </form>
+    </section>
+
+    <section class="form-container hidden">
+
+      <!-- Guest information form and payment gateway -->
+      <div class="container-left">
+
+        <div class="form-section-2">
+          <form action="form-confirmation-page.html" method="post" id="guest-info-field" autocomplete="off">
+            <div class="top-field">
+              <a href="rooms-booking.html" id="go-back">&#10094</a>
+              <h2 id="guestinfo">Guest Information</h2>
+            </div>
+
+            <div class="input-field">
+              <input type="text" name="fname" class="guestinfo-field" id="fname" required>
+              <label for="fname">First Name<span class="astk">*</span></label>
+              <div class="error"></div>
+            </div>
+
+            <div class="input-field">
+              <input type="text" name="lname" class="guestinfo-field" id="lname" required>
+              <label for="lname">Last Name<span class="astk">*</span></label>
+              <div class="error"></div>
+            </div>
+
+            <div class="input-field">
+              <input type="text" name="email" class="guestinfo-field" id="email" required>
+              <label for="email">Email Address<span class="astk">*</span></label>
+              <div class="error"></div>
+            </div>
+
+            <div class="input-field">
+              <input type="text" name="phone" class="guestinfo-field" id="phone" required>
+              <label for="phone">Phone Number<span class="astk">*</span></label>
+              <div class="error"></div>
+            </div>
+          </form>
+        </div>
+
+        <div class="form-section-2">
+          <form id="payment-form" action="form-confirmation-page.html" method="post" autocomplete="off">
+
+            <h2 id="payment-gatement">Payment</h2>
+            <label for="acceptCard">Accepted Cards:</label>
+            <!-- <img src="assets\images\suite\accepted card.png" alt="accept-card" id="accepted-card"> -->
+            <div class="card-holders">
+              <img src="assets/images/cards/visa.png" alt="visa" id="visa">
+              <img src="assets/images/cards/mastercard.png" alt="mastercard" id="mastercard">
+              <img src="assets/images/cards/diners.png" alt="diners" id="diners">
+              <img src="assets/images/cards/amex.png" alt="amex" id="amex">
+            </div>
+
+            <div class="input-field">
+              <input type="text" class="guestinfo-field" id="cardNum" name="CardNum" required>
+              <label for="CardNum">Card Number<span class="astk">*</span></label>
+              <div class="error"></div>
+            </div>
+
+            <div class="input-field">
+              <input type="text" name="CHname" class="guestinfo-field" id="chname" required>
+              <label for="CHname">Card Holder Name<span class="astk">*</span></label>
+              <div class="error"></div>
+            </div>
+
+            <div class="input-field">
+              <input type="text" name="CVV" class="guestinfo-field" id="CVV" required>
+              <label for="CHname">CVV<span class="astk">*</span></label>
+              <div class="error"></div>
+            </div>
+
+            <label for="exp">Expiry Date (mm/yy):<span class="astk">*</span> </label>
+            <div class="guestinfo-field card-exp-date">
+              <select name="exp-month" class="exp-date" required>
+                <option value="mm">mm</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+
+              <br>
+
+              <select name="exp-year" class="exp-date" required>
+                <option value="yy">yy</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+                <option value="32">32</option>
+                <option value="33">33</option>
+                <option value="34">34</option>
+                <option value="35">35</option>
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+                <option value="41">41</option>
+                <option value="42">42</option>
+                <option value="43">43</option>
+                <option value="44">44</option>
+              </select>
+            </div>
+
+            <div class="checkBox">
+              <input type="checkbox" name="agreePolicy" id="agreePolicy" required>
+              <label for="agreePolicy" id="agreePolicy-text">I agree to the <a href="privacy-policy.html"
+                  target="_blank">Privacy Policy</a><span class="astk">*</span></label>
+              <div class="error"></div>
+            </div>
+
+            <button type="submit" class="rm-btn">Book</button>
+
+          </form>
+        </div>
+
+      </div>
+
+      <div class="container-right">
+        <div class="booking-details-card">
+          <!-- <h2 id="booking-detail">Booking Details</h2> -->
+          <img id="type-of-room-choosen" alt="room-image">
+          <h2 id="roomtype"><span id="booking-room-type"></span></h2>
+          <p><strong>Arrival Date: </strong><span id="booking-arrival-date"></span></p>
+          <p><strong>Departure Date: </strong><span id="booking-departure-date"></span></p>
+          <hr class="booking-card-hr">
+
+          <div class="price-display">
+            <p><strong>Price: </strong></p>
+            <p class="price" id="room-price"></p>
+
+          </div>
+          <div class="price-display">
+            <p><strong>VAT Rate: </strong></p>
+            <p class="price" id="tax"></p>
+          </div>
+          <hr class="booking-card-hr">
+          <div class="price-display">
+            <p><strong>Total Price: </strong></p>
+            <p class="price" id="total-price"></p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+  <!-- End of Rooms Booking Form -->
 
   <!-- Back to top button -->
   <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
@@ -170,11 +358,24 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
+  <!-- End of jQuery, Popper.js, and Bootstrap JS -->
+
+  <!-- EmailJS -->
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "eD5LHIFrCaOIiB3Om",
+      });
+    })();
+  </script>
+  <!-- End of EmailJS -->
+
   <!-- Local Scripts -->
   <script src="js/nav-dropdown.js"></script>
   <script src="js/anti-scroll-dropdown.js"></script>
   <script src="js/newsletter-signup.js"></script>
   <script src="js/back-to-top.js"></script>
+  <script src="js/rooms-booking.js"></script>
   <!-- End of Scripts -->
 </body>
 

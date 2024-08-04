@@ -11,10 +11,10 @@ This project is a prototype for a static hotel website. It is designed to provid
 
 | Contributor | Allocated Webpages                                   |
 |-------------|------------------------------------------------------|
-| Kriston     | Home, Contact Form, 404, About Us, Footer Pages, Preloader |
+| Kriston     | Home, Contact Form, 404, About Us, Footer Pages |
 | Joon Yin    | Rooms, Room Pages, Booking Form           |
-| Yu En       | Facilities, Facilities Form, Nearby Attractions      |
-| Rui Xuan    | Dine, Restaurace KRYJ, The Terrace Café, Restaurant Form   |
+| Yu En       | Facilities, Facilities Form      |
+| Rui Xuan    | Dine, Restaurant Form   |
 
 ## Languages & Frameworks Used
 
@@ -39,6 +39,10 @@ Most of the resources we referenced from are as shown below:
 ![Infinite Scrolling Animations by constgenius](https://img.shields.io/badge/Infinite%20Scrolling%20Animations%20by%20constgenius-24292E?style=for-the-badge&logo=github&logoColor=white)
 
 ## Misc
+
+### Live Demo
+
+https://kr1s7on.github.io/IT1301-UX-Design-KRYJ/
 
 ### Installation
 
