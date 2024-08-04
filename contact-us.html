@@ -20,9 +20,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100..900&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
-    rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet" />
   <!-- End of Google Fonts -->
   <!-- Ajax -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -63,12 +60,12 @@
     </div>
 
     <div class="dropdown_menu">
-      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="rooms.html">Rooms</a></li>
       <li><a href="dine.html">Dine</a></li>
       <li><a href="facilities.html">Facilities</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="contact-us.html">Contact</a></li>
+      <li><a href="contact-us.html" class="active">Contact</a></li>
 
       <div class="socials">
         <a href="https://www.facebook.com/Hotels.comUS/?locale=en_GB" target="_blank"><i class="fa-brands fa-facebook"
@@ -92,7 +89,7 @@
     <h2 id="ctn-header">Contact Us</h2>
     <p class="white-line"></p>
     <br />
-    <form action="#" method="post">
+    <form id="contactForm" action="contact-confirmation.html" method="post">
       <fieldset>
         <div class="input-field">
           <label for="name">Full Name<span class="astk">*</span></label>
@@ -217,6 +214,7 @@
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
   <!-- Local Scripts -->
+  <script src="js/contact-form.js"></script>
   <script src="js/nav-dropdown.js"></script>
   <script src="js/scroll-fade.js"></script>
   <script src="js/anti-scroll-dropdown.js"></script>

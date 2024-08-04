@@ -747,4 +747,8 @@ ul {
     margin-bottom: 25px;
 }
 
+.accordion-button:not(.collapsed):after {
+    color: rgb(165, 123, 18);
+}
+
 /* End of Deco */

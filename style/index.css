@@ -183,6 +183,14 @@
     transition: 0.6s;
 }
 
+.card-content {
+    color: black;
+}
+
+.card-content p:hover {
+    color: black;
+}
+
 .card-content button:hover {
     background-color: rgb(151, 98, 0);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
@@ -201,4 +209,18 @@
     }
 }
 
+
+.testimonials-cc h2 {
+    font-family: 'Lexend Peta', cursive;
+    font-weight: 300;
+    color: rgb(165, 123, 18);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.testimonials-cc .white-line {
+    font-size: 18px;
+    text-align: center;
+    padding-top: 10px;
+}
 /* End of Content */

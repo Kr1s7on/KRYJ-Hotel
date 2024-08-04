@@ -337,3 +337,33 @@
     max-width: 100%; /* Ensure the image does not exceed the column width */
     object-fit: cover; /* Ensure the image covers the area without distortion */
 }
+
+.room-section nav {
+    display: flex;
+    justify-content: left;
+    padding-left: 80px;
+}
+
+@media (max-width: 600px) {
+    .room-section nav {
+        padding-left: 0;
+        justify-content: center;
+    }
+}
+
+.room-section nav a {
+    text-decoration: none;
+    color: black;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: rgba(165, 123, 18, 0.199);
+    border: rgb(218, 208, 184) 1px solid;
+    color: black;
+    transition: 0.6s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.room-section nav a:hover {
+    background-color: rgb(151, 98, 0);
+    color: white;
+}

@@ -22,6 +22,44 @@ body {
     font-weight: 300;
 }
 
+#ctn-form-ct .info-txt {
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#ctn-form-ct .btn {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(165, 123, 18);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.6s;
+    border: none;
+}
+
+#ctn-form-ct .btn:hover {
+    background-color: rgb(151, 98, 0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#confirmationDetails {
+    text-align: center;
+}
+
+#confirmationDetails .alert {
+    width: 40%;
+    margin: auto;
+}
+
 form {
     display: flex;
     flex-direction: column;
