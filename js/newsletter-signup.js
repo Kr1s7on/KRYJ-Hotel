@@ -1,5 +1,3 @@
-// by: Kriston
-
 document.getElementById('newsletter-form').addEventListener('submit', function (event) {
 
     // Prevent the default form submission

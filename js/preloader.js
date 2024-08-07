@@ -1,5 +1,3 @@
-// by: Kriston
-
 window.addEventListener('DOMContentLoaded', () => {
   const preloader = document.querySelector('.preloader');
   const websiteContent = document.body;
@@ -13,5 +11,5 @@ window.addEventListener('DOMContentLoaded', () => {
     if (preloader.parentNode) {
       preloader.parentNode.removeChild(preloader);
     }
-  }, 2000); // Delay to match the duration of the fade-out animation
+  }, 2000);
 });

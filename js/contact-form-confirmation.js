@@ -14,6 +14,7 @@ if (contactFormData) {
     localStorage.removeItem('contactFormData');
 }
 
+// When there's no data found
 else {
     const noDataElement = document.createElement('p');
     noDataElement.className = 'alert alert-danger';
