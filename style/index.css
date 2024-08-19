@@ -218,6 +218,12 @@
     margin-bottom: 15px;
 }
 
+.testimonials-cc {
+    width: 80%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
 .testimonials-cc .white-line {
     font-size: 18px;
     text-align: center;

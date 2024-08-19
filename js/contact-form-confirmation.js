@@ -12,6 +12,7 @@ if (contactFormData) {
 
     // Clear the local storage
     localStorage.removeItem('contactFormData');
+
 }
 
 // When there's no data found
