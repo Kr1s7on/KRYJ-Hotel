@@ -16,15 +16,6 @@ This project is a prototype for a static hotel website. It is designed to provid
 | Yu En       | Facilities, Facilities Form      |
 | Rui Xuan    | Dine, Restaurant Form   |
 
-## Latest Updates
-
-The project has been optimized and cleaned up for the Early Admissions Exercise festival showcase:
-- Standardized CSS and removed redundancies
-- Fixed JavaScript validation issues
-- Improved mobile responsiveness
-- Enhanced cross-browser compatibility
-- Organized code structure for better maintainability
-
 ## Languages & Frameworks Used
 
 This project utilizes a variety of languages and frameworks to enhance user experience and simplify development:
