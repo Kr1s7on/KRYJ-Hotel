@@ -1,22 +1,41 @@
-let elements = document.querySelectorAll('.animate-on-scroll');
-
-// IntersectionObserver object to track when elements come into view.
-let observer = new IntersectionObserver((entries) => {
-  // Loop through each element being observed.
-  entries.forEach(entry => {
-    // Check if in view.
-    if (entry.isIntersecting) {
-      // Use requestAnimationFrame to add class in sync with browser's repaint
-      requestAnimationFrame(() => {
-        entry.target.classList.add('visible');
-      });
-      // Stop observing if visible.
-      observer.unobserve(entry.target);
+// Scroll animation script
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all elements to animate
+    const animatedElements = document.querySelectorAll('.animate-on-scroll');
+    
+    // Function to check if element is in viewport
+    function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 0.9 && 
+            rect.bottom >= 0
+        );
     }
-  });
-}, { threshold: 0.1 }); // Lower threshold earlier triggers.
-
-// Start observing each element in the selected elements.
-elements.forEach(element => {
-  observer.observe(element);
+    
+    // Function to handle scroll animation with debounce
+    let scrollTimeout;
+    function handleScroll() {
+        // Clear previous timeout
+        if (scrollTimeout) {
+            window.cancelAnimationFrame(scrollTimeout);
+        }
+        
+        // Set new timeout using requestAnimationFrame for better performance
+        scrollTimeout = window.requestAnimationFrame(function() {
+            animatedElements.forEach(element => {
+                if (isInViewport(element)) {
+                    element.classList.add('visible');
+                }
+            });
+        });
+    }
+    
+    // Run once to check for elements already in view when page loads
+    handleScroll();
+    
+    // Add scroll event listener
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    
+    // Also check on window resize
+    window.addEventListener('resize', handleScroll, { passive: true });
 });

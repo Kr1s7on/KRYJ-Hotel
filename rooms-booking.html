@@ -31,6 +31,7 @@
   <!-- End of Ajax -->
   <!-- Local CSS -->
   <link rel="stylesheet" href="style/global.css" />
+  <link rel="stylesheet" href="style/consolidated.css" />
   <link rel="stylesheet" href="style/rooms.css" />
   <link rel="stylesheet" href="style/rooms-booking.css">
   <!-- End of Local CSS -->
@@ -72,10 +73,10 @@
       <li><a href="contact-us.html">Contact</a></li>
 
       <div class="socials">
-        <a href="https://www.facebook.com/Hotels.comUS/?locale=en_GB" target="_blank"><i class="fa-brands fa-facebook"
-            id="facebook"></i></a>
-        <a href="https://twitter.com/hotelsdotcom?lang=en" target="_blank"><i class="fa-brands fa-x" id="x"></i></a>
-        <a href="https://www.instagram.com/hotelsdotcom/" target="_blank"><i class="fa-brands fa-instagram"
+        <a href="https://www.facebook.com/Hotels.comUS/?locale=en_GB" target="_blank"><i
+            class="fab fa-facebook-f" id="facebook"></i></a>
+        <a href="https://twitter.com/hotelsdotcom?lang=en" target="_blank"><i class="fab fa-x" id="x"></i></a>
+        <a href="https://www.instagram.com/hotelsdotcom/" target="_blank"><i class="fab fa-instagram"
             id="instagram"></i></a>
       </div>
     </div>
@@ -91,20 +92,20 @@
 
         <!-- Check-in Date -->
         <label for="Adate">Check-in Date:<span class="astk">*</span></label>
-        <input type="date" id="Adate" name="Adate" required><br>
+        <input type="date" id="Adate" name="Adate" required min="2023-01-01"><br>
 
         <!-- Check-out Date -->
         <label for="Edate">Check-out Date:<span class="astk">*</span></label>
-        <input type="date" id="Edate" name="Edate" required><br>
+        <input type="date" id="Edate" name="Edate" required min="2023-01-01"><br>
 
         <!-- Choice of Room -->
         <label for="room">Preferred room<span class="astk">*</span></label>
         <select name="room" id="room" required>
-          <option value="FR">Family Room</option>
-          <option value="Droom">Duplex Room</option>
-          <option value="DeluxeRoom">Deluxe Room</option>
-          <option value="RS">Renaissance Suite</option>
-          <option value="PS">Presidential Suite</option>
+          <option value="Family Room">Family Room</option>
+          <option value="Duplex Room">Duplex Room</option>
+          <option value="Deluxe Room">Deluxe Room</option>
+          <option value="Renaissance Suite">Renaissance Suite</option>
+          <option value="Presidential Suite">Presidential Suite</option>
         </select>
 
         <button class="rm-btn" type="submit" id="checkAvailable">Proceed</button>
@@ -245,8 +246,8 @@
           <!-- <h2 id="booking-detail">Booking Details</h2> -->
           <img id="type-of-room-choosen" alt="room-image">
           <h2 id="roomtype"><span id="booking-room-type"></span></h2>
-          <p><strong>Arrival Date: </strong><span id="booking-arrival-date"></span></p>
-          <p><strong>Departure Date: </strong><span id="booking-departure-date"></span></p>
+          <p><strong>Check-in Date: </strong><span id="booking-arrival-date"></span></p>
+          <p><strong>Check-out Date: </strong><span id="booking-departure-date"></span></p>
           <hr class="booking-card-hr">
 
           <div class="price-display">
@@ -360,12 +361,14 @@
     crossorigin="anonymous"></script>
   <!-- End of jQuery, Popper.js, and Bootstrap JS -->
 
+  <!-- EmailJS Library -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <!-- End of EmailJS Library -->
+
   <!-- EmailJS -->
   <script type="text/javascript">
     (function () {
-      emailjs.init({
-        publicKey: "eD5LHIFrCaOIiB3Om",
-      });
+      emailjs.init("zsLqq2iqBk0hMSx7o");
     })();
   </script>
   <!-- End of EmailJS -->

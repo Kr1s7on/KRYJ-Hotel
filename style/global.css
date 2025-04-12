@@ -139,16 +139,15 @@ header {
     padding: 2em;
     z-index: 1000;
     background-color: white;
-    backdrop-filter: blur(15px);
     box-shadow: #000 0px 0px 20px;
 }
 
 .navbar.transparent {
-    background-color: transparent;
+    background-color: white; /* Changed from transparent to white */
 }
 
 .navbar.dropdown-active {
-    background-color: rgba(255, 255, 255, 0.493);
+    background-color: white; /* Changed from rgba(255, 255, 255, 0.493) to white */
 }
 
 .logo a {
@@ -719,8 +718,14 @@ ul {
     display: none;
     background-color: rgb(165, 123, 18);
     border: none;
+    border-radius: 10px !important; /* Force slightly rounded corners */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     z-index: 999;
+}
+
+/* Explicitly override Bootstrap's btn-floating class */
+.btn-floating {
+    border-radius: 0 !important; /* Force square corners */
 }
 
 /* Accordion Styles */
